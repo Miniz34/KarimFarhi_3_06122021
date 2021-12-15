@@ -1,0 +1,20 @@
+{
+  "name": "ohmyfoodp3",
+  "version": "1.0.0",
+  "description": "projet 3 karim farhi",
+  "main": "index.js",
+  "scripts": {
+   "sass": "sass --watch ./sass/main.scss:public/css/style.css"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miniz34/OhMyFoodP3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Miniz34/OhMyFoodP3/issues"
+  },
+  "homepage": "https://github.com/Miniz34/OhMyFoodP3#readme"
+}
