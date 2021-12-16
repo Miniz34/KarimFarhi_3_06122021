@@ -1,5 +1,6 @@
 section img {
-  height: 200px;
+  object-fit: cover;
+  height: 18.5rem;
 }
 
 body {
