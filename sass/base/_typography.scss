@@ -3,8 +3,15 @@ img
 {
     height: 200px;
 }
-.restaurant__card
+
+
+body
 
 {
-    background-color: yellow;
+    box-sizing: border-box;
+    
+}
+
+img  {
+    object-fit: cover;
 }

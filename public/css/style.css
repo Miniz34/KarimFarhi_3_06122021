@@ -2,8 +2,12 @@ img {
   height: 200px;
 }
 
-.restaurant__card {
-  background-color: yellow;
+body {
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: cover;
 }
 
 .localisation {
