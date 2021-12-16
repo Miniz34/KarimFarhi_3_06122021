@@ -1,0 +1,38 @@
+@mixin primary-box-shadow($color: $box-shadow-color) {
+ box-shadow: 0.5rem 0.5rem 0.5rem 0 $color;
+}
+
+@mixin primary-border($color: $box-shadow-color){
+   
+    border-radius: 20px;
+}
+
+@mixin secondary-border($color: $primary-color){
+    border-radius: 20px;
+}
+
+
+@mixin btn($color: linear-gradient($color-secondary,$color-primary)){
+    color: white;
+    background: linear-gradient($color-secondary,$color-primary);
+    border-radius: 20px;
+    border: 0px;
+    
+}
+
+
+.howto__link
+{
+    @include primary-box-shadow; 
+    @include primary-border;
+}
+
+
+.btn 
+
+{
+   @include btn;
+    height: 40px;
+    width: 250px;
+    
+}

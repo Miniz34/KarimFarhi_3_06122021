@@ -9,6 +9,13 @@
     <meta charset="utf-8">
     <script src="https://kit.fontawesome.com/0c06550e73.js" crossorigin="anonymous"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100;400;700&family=Shrikhand&display=swap" rel="stylesheet">
+
 
     
     <link rel="stylesheet" href="/public/css/style.css">
@@ -23,7 +30,8 @@
 
 <body>
 <header>
-    <img src="public/images/logo/ohmyfood.png" id="mainlogo" class="mainlogo" alt="logo ohmyfood">
+    <div class="mainlogo">
+    <img src="public/images/logo/ohmyfood.png" id="mainlogo" class="mainlogo__img" alt="logo ohmyfood"></div>
     <div class="localisation">
         <div class="localisation__marker"><i class="fas fa-map-marker-alt fa-2x" id="localisation2"> </i></div>
                             <div class="localisation__city">Paris, Belleville</div>
@@ -43,18 +51,24 @@
 
 </header>
 
-<h2>Fonctionnement</h2>
+<section class="howto">
 
-<nav class="nav">
-    <ul>
-        <a href="#1"><li class="nav__link"> <i class="fas fa-mobile-alt"></i>
+    <div class="howto__container">
 
-            Choisissez un restaurant </li> </a>
-            <a href="#1"> <li class="nav__link"> <i class="fas fa-list-ul"></i>Composez votre menu</li> </a>
-                <a href="#1"> <li class="nav__link"> <i class="fas fa-store"></i> Dégustez au restaurant</li> </a>
+<h2 class="titles">Fonctionnement</h2>
 
-    </ul>
-</nav>
+
+
+   <div class="howto__cards">
+
+    
+        <a href="#1"> <div class="howto__link"> <span class="howto__number">1</span> <i class="fas fa-mobile-alt howto__logo"></i> <p class="howto__text">Choisissez un restaurant </p> </div> </a>
+        <a href="#1"> <div class="howto__link"> <span class="howto__number">2</span> <i class="fas fa-list-ul howto__logo"></i>Composez votre menu</div> </a>
+        <a href="#1"> <div class="howto__link"> <span class="howto__number">3</span> <i class="fas fa-store howto__logo"></i> Dégustez au restaurant</div> </a>
+        </div>
+    </div>
+    
+</section>
 
 <main>
     <section class="restaurant">

@@ -1,17 +1,26 @@
-img
+section img
 
 {
     height: 200px;
 }
 
 
+
 body
 
 {
     box-sizing: border-box;
+    font-family: 'roboto' 'sans-serif';
     
 }
 
-img  {
+section img  {
     object-fit: cover;
+}
+
+a
+
+{
+    text-decoration: none;
+    color: black;
 }

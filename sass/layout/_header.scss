@@ -1,0 +1,52 @@
+header
+
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainlogo 
+{
+    height: 50px;
+
+
+    .mainlogo__img
+
+    {
+    height: 35px;
+    width: 100%;
+   
+    }
+
+
+}
+
+.localisation 
+
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-background-1;
+    width: 100%;
+
+    .localisation__marker
+
+    {
+        font-size: 8px;
+        padding: 10px
+    }
+    
+}
+
+.headercontent 
+
+{
+    background-color: $color-background-2;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 60px;
+}
+

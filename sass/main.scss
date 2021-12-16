@@ -1,5 +1,9 @@
 @import "./base/typography";
 @import "./utils/variables";
+@import "./layout/header";
+@import "./components/button.scss";
+@import "./layout/howto.scss";
+@import "./utils/mixins";
 
 
 .localisation 
@@ -7,3 +11,4 @@
 {
     display: flex;
 }
+
