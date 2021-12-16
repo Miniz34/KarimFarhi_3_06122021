@@ -50,6 +50,19 @@ header {
   padding-bottom: 60px;
 }
 
+.localisation {
+  display: flex;
+}
+
+.btn {
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 20px;
+  border: 0px;
+  height: 40px;
+  width: 250px;
+}
+
 .howto {
   display: flex;
   flex-direction: column;
@@ -66,8 +79,11 @@ header {
   height: 50px;
   padding-left: 50px;
   padding-right: 50px;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0 #aaa;
+  border-radius: 20px;
 }
-.howto__link .howto__number {
+
+.howto__number {
   text-align: center;
   color: white;
   margin-left: -63px;
@@ -77,26 +93,9 @@ header {
   height: 25px;
   border-radius: 80%;
 }
-.howto__link .howto__logo {
+
+.howto__logo {
   margin-right: 25px;
-}
-
-.howto__link {
-  box-shadow: 0.5rem 0.5rem 0.5rem 0 #aaa;
-  border-radius: 20px;
-}
-
-.btn {
-  color: white;
-  background: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 20px;
-  border: 0px;
-  height: 40px;
-  width: 250px;
-}
-
-.localisation {
-  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

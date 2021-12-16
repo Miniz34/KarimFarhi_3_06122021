@@ -21,18 +21,3 @@
 }
 
 
-.howto__link
-{
-    @include primary-box-shadow; 
-    @include primary-border;
-}
-
-
-.btn 
-
-{
-   @include btn;
-    height: 40px;
-    width: 250px;
-    
-}
