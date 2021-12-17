@@ -1,13 +1,16 @@
 @mixin primary-box-shadow($color: $box-shadow-color) {
  box-shadow: 0.5rem 0.5rem 0.5rem 0 $color;
 }
+@mixin secondary-box-shadow($color: $box-shadow-color){
+    box-shadow: 0.1rem 0.1rem 1rem 0 $color;
+}
 
 @mixin primary-border($color: $box-shadow-color){
    
     border-radius: 20px;
 }
 
-@mixin secondary-border($color: $primary-color){
+@mixin secondary-border{
     border-radius: 20px;
 }
 
@@ -15,9 +18,43 @@
 @mixin btn($color: linear-gradient($color-secondary,$color-primary)){
     color: white;
     background: linear-gradient($color-secondary,$color-primary);
-    border-radius: 20px;
+    border-radius: 40px;
     border: 0px;
+    font-size: 1.1rem;
+    
     
 }
 
+@function lightness-shift($colour){
+   @if(lightness($colour) <50%){
+        @return ligthen($colour, 20%) }@else{
+            @return darken($colour, 40%)
+        }
+    }
 
+    @mixin lightness($colour: lightness-shift($color-tertiary)){
+        color: $colour;
+   }
+
+   @mixin secondary-margin{
+       margin: 2% 0 0 0;
+   }
+
+@mixin font-cards{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+@mixin font-howto{
+    font-weight: 550;
+}
+
+@mixin font-title{
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+@mixin font-cards-p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}

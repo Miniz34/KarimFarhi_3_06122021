@@ -39,16 +39,17 @@
                             <div class="localisation__city">Paris, Belleville</div>
 
     </div>
-
+    <div class="header-wrapper">
     <div class="headercontent">
-    <div class="headercontent__title"><h1>Réserver le menu qui vont convient</h1>
+    <div class="headercontent__title titles"><h1>Réserver le menu qui vont convient</h1> </div>
         <div class="headercontent__text"><p>Découvrez des restaurant d'exception sélectionnés par nos soins</p></div>
 
         </div>
     
+    
     <button class="btn" type="button"> Explorer nos restaurants</button>
 
-
+</div>
 
 
 </header>
@@ -65,8 +66,8 @@
 
     
         <a href="#1"> <div class="howto__link"> <span class="howto__number">1</span> <i class="fas fa-mobile-alt howto__logo"></i> <p class="howto__text">Choisissez un restaurant </p> </div> </a>
-        <a href="#1"> <div class="howto__link"> <span class="howto__number">2</span> <i class="fas fa-list-ul howto__logo"></i>Composez votre menu</div> </a>
-        <a href="#1"> <div class="howto__link"> <span class="howto__number">3</span> <i class="fas fa-store howto__logo"></i> Dégustez au restaurant</div> </a>
+        <a href="#1"> <div class="howto__link"> <span class="howto__number">2</span> <i class="fas fa-list-ul howto__logo"></i> <p>Composez votre menu </p></div> </a>
+        <a href="#1"> <div class="howto__link"> <span class="howto__number">3</span> <i class="fas fa-store howto__logo"></i> <p>Dégustez au restaurant </p></div> </a>
         </div>
     </div>
     
@@ -74,11 +75,13 @@
 
 <main>
     <section class="restaurant">
-
-        <h2 class="titles">Resaurants</h2>
+        <div class="restaurant-wrapper">
+        <h2 class="titles">Restaurants</h2>
         <a href="palette_gout.html">
             <div class="restaurant__card">
-            <img class="restaurant__img" src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"></img>
+                <div class="restaurant__img--new"><p>Nouveau</p></div>
+            <img class="restaurant__img" src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"/>
+            
             <div class="restaurant__content">
                 <div class="restaurant__text"> <h3>La palette du goût</h3>
                 <p>Ménolmontant</p></div>
@@ -91,7 +94,8 @@
 
         <a href="note_enchantee.html">
             <div class="restaurant__card">
-            <img class="restaurant__img" src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"></img>
+                <div class="restaurant__img--new"><p>Nouveau</p></div>
+            <img class="restaurant__img" src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"/>
             <div class="restaurant__content">
                 <div class="restaurant__text"> <h3>La palette du goût</h3>
                 <p>Ménolmontant</p></div>
@@ -104,7 +108,7 @@
 
         <a href="la_francaise.html">
             <div class="restaurant__card">
-            <img class="restaurant__img" src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"></img>
+            <img class="restaurant__img" src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"/>
             <div class="restaurant__content">
                 <div class="restaurant__text"> <h3>La palette du goût</h3>
                 <p>Ménolmontant</p></div>
@@ -117,7 +121,7 @@
 
         <a href="delice_sens.html">
             <div class="restaurant__card">
-            <img class="restaurant__img" src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"></img>
+            <img class="restaurant__img" src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"/>
             <div class="restaurant__content">
                 <div class="restaurant__text"> <h3>La palette du goût</h3>
                 <p>Ménolmontant</p></div>
@@ -127,7 +131,7 @@
             </div>
             </div>
         </a>
-        
+        </div>
     </section>
 
 
@@ -135,16 +139,17 @@
 </main>
 
 <footer>
-    <img src="public/images/logo/ohmyfood.png" id="mainlogo" class="mainlogo--white" alt="logo ohmyfood">
+    
     <div class="footercontent">
-        <ul>
-            <li class="footercontent__link"><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-            <li class="footercontent__link"><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-            <li class="footercontent__link">Mentions légales</li>
-            <li class="footercontent__link">Contact</li>
+        <h3 class="footercontent__title">ohmyfood</h3>
+        
+            <p class="footercontent__link"><i class="fas fa-utensils footercontent__icon"></i>Proposer un restaurant</p>
+            <p class="footercontent__link"><i class="fas fa-hands-helping footercontent__icon--2"></i>Devenir partenaire</p>
+            <p class="footercontent__link">Mentions légales</p>
+            <p class="footercontent__link">Contact</p>
 
             
-        </ul>
+        
     </div>
 </footer>
 </div>

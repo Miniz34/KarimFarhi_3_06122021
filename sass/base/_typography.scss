@@ -3,7 +3,7 @@ body
 
 {
     box-sizing: border-box;
-    font-family: 'roboto' 'sans-serif';
+    font-family: 'roboto', 'sans-serif';
     
 }
 
@@ -16,4 +16,43 @@ a
 {
     text-decoration: none;
     color: black;
+}
+
+.restaurant {
+    h3 {
+        @include font-cards;
+    }
+    p{
+        @include font-cards-p;
+    }
+
+    
+}
+
+.howto {
+    p {
+        @include font-howto;
+    }
+}
+
+.titles {
+    @include font-title;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+header{
+    p{
+        font-size: 1.2rem;
+    }
+}
+
+.restaurant__img--new{
+    p {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
 }
