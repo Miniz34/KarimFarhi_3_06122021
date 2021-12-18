@@ -43,7 +43,7 @@
     
     background-color: $color-background-2;
     margin-bottom: 10%;
-    height: 50px;
+    height: 80px;
     padding-left: 50px;
     padding-right: 50px;
     @include primary-box-shadow; 
@@ -91,13 +91,13 @@
 
 
 
-
    .restaurant {
        background-color: $color-background-2;
        width: 100%;
        display: flex;
        flex-direction: column;
        align-items: center;
+       padding-bottom: 40px;
 
 
        &-wrapper {
@@ -186,6 +186,7 @@
 
 footer {
     background-color: rgb(59, 59, 59);
+    margin-top: -35px;
 }
 
 .footercontent{
@@ -218,4 +219,105 @@ footer {
    p {
        @include secondary-margin;
    }
+}
+
+
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*-----------Restaurants--------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+
+
+
+.main-img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+
+.return {
+    @include return;
+}
+
+
+main {
+    background-color: $color-background-solid;
+   
+}
+
+.restaurant-list__title {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: $color-background-solid;
+    padding-bottom: 10%;
+    position: relative;
+    bottom: 100px;
+    @include tertiary-border;
+}
+
+
+.restaurant-card {
+    &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    &__title {
+        font-size: 1.5rem;
+        margin-bottom: 4%;
+        width: 60px;
+        padding-bottom: 10px;
+        border-bottom: 4px solid $color-tertiary;
+        font-weight: 400;
+        margin-left: 2%;
+      
+        
+    }
+    &__card {
+    background-color: $color-white;
+    width: 95%;
+    margin-bottom: 4%;
+    @include secondary-border;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 2% 2% 2%;
+
+    &--title {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    &--content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &--text {
+        font-size: 1.3rem;
+    }
+
+    &--price {
+        font-weight: 700;
+        margin-right: 3%;
+    }
+}
+    
+}
+
+.btn-restaurant {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    
 }

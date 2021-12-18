@@ -3,6 +3,13 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-background-1: rgba(141, 139, 139, 0.479);
 $color-background-2: rgba(223, 221, 221, 0.719);
+$color-background-solid: rgba(223, 221, 221, 1);
 $color-white: #FFF;
 
 $box-shadow-color: #aaa;
+
+
+$breakpoints: (
+	tablet: 700px,
+	desktop: 1200px,
+	big-desktop: 2000px,);
