@@ -288,10 +288,16 @@ main {
     display: flex;
     flex-direction: column;
     padding: 2% 2% 2% 2%;
+    @include secondary-box-shadow;
+    flex-wrap: nowrap;
 
     &--title {
         font-size: 1.5rem;
         font-weight: 700;
+        max-height: 65px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
     &--content {
@@ -302,6 +308,10 @@ main {
 
     &--text {
         font-size: 1.3rem;
+        max-height: 65px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
     &--price {

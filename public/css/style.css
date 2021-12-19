@@ -128,6 +128,10 @@ h1 {
   margin-right: 6%;
 }
 
+.restaurant-list__title h1 {
+  width: 70%;
+}
+
 .localisation {
   display: flex;
 }
@@ -342,10 +346,16 @@ main {
   display: flex;
   flex-direction: column;
   padding: 2% 2% 2% 2%;
+  box-shadow: 0.1rem 0.1rem 1rem 0 #aaa;
+  flex-wrap: nowrap;
 }
 .restaurant-card__card--title {
   font-size: 1.5rem;
   font-weight: 700;
+  max-height: 65px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .restaurant-card__card--content {
   display: flex;
@@ -354,6 +364,10 @@ main {
 }
 .restaurant-card__card--text {
   font-size: 1.3rem;
+  max-height: 65px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .restaurant-card__card--price {
   font-weight: 700;
