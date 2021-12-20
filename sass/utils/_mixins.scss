@@ -1,3 +1,20 @@
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints, tablet)){
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}
+
+
+
+
+
+
 @mixin primary-box-shadow($color: $box-shadow-color) {
  box-shadow: 0.5rem 0.5rem 0.5rem 0 $color;
 }

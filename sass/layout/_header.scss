@@ -1,14 +1,10 @@
-.header-wrapper
-
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .mainlogo 
 {
     height: 50px;
+    @include tablet-only {
+        height: 70px;
+    }
 
 
     .mainlogo__img
@@ -16,6 +12,9 @@
     {
     height: 35px;
     width: 100%;
+    @include tablet-only {
+        height: 50px;
+    }
    
     }
     
@@ -60,6 +59,10 @@
     width: 70%;
     text-align: center;
     padding-bottom: 60px;
+    @include tablet-only {
+        display: flex;
+        
+    }
 }
 
 
