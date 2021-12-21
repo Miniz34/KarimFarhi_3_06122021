@@ -4,14 +4,16 @@
     align-items: center;
 
     &__main-title {
-        @include tablet-only {
+
+       @include tablet-only {
             text-align: center;
             margin-top: 5%;
+            margin-bottom: 2%;
         }
     }    
 
     &__container {
-        width: 100%;
+        width: 98%;
 
     }
 

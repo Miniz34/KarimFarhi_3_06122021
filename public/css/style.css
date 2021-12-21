@@ -212,10 +212,11 @@ header .restaurant__img--new p {
   .howto__main-title {
     text-align: center;
     margin-top: 5%;
+    margin-bottom: 2%;
   }
 }
 .howto__container {
-  width: 100%;
+  width: 98%;
 }
 @media screen and (min-width: 700px) {
   .howto__cards {
