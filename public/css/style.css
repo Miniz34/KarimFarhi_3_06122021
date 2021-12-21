@@ -59,6 +59,11 @@ header .restaurant__img--new p {
   font-weight: 700;
 }
 
+.restaurant-list__title h1 {
+  font-family: "Shrikhand", "sans-serif";
+  font-weight: 500;
+}
+
 .mainlogo {
   height: 50px;
 }
@@ -162,12 +167,6 @@ header .restaurant__img--new p {
   left: 7%;
 }
 
-.restaurant__icon {
-  font-size: 2.2rem;
-  margin-top: 2%;
-  margin-right: 6%;
-}
-
 .restaurant-list__title h1 {
   width: 70%;
 }
@@ -198,6 +197,11 @@ header .restaurant__img--new p {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 700px) {
+  .btn-restaurant {
+    margin-top: 2%;
+  }
+}
 
 .howto {
   display: flex;
@@ -211,7 +215,7 @@ header .restaurant__img--new p {
   }
 }
 .howto__container {
-  width: 90%;
+  width: 100%;
 }
 @media screen and (min-width: 700px) {
   .howto__cards {
@@ -221,6 +225,11 @@ header .restaurant__img--new p {
     align-items: center;
     height: 90px;
     width: 100%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .howto .howto__cards-wrapper {
+    width: 30%;
   }
 }
 
@@ -298,6 +307,17 @@ section img {
   }
 }
 
+@media screen and (min-width: 700px) {
+  .restaurant__card-wrapper {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .restaurant__card-wrapper {
+    width: 24%;
+  }
+}
+
 .restaurant {
   background-color: rgba(223, 221, 221, 0.719);
   width: 100%;
@@ -315,15 +335,7 @@ section img {
   }
 }
 .restaurant-wrapper {
-  width: 90%;
-}
-@media screen and (min-width: 700px) {
-  .restaurant-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 98%;
-    align-items: center;
-  }
+  width: 95%;
 }
 .restaurant__card {
   width: 100%;
@@ -331,16 +343,6 @@ section img {
   margin-bottom: 10%;
   box-shadow: 0.1rem 0.1rem 1rem 0 #aaa;
   border-radius: 20px;
-}
-@media screen and (min-width: 700px) {
-  .restaurant__card {
-    min-width: 350px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .restaurant__card {
-    min-width: 275px;
-  }
 }
 .restaurant__img {
   border-top-left-radius: 20px;
@@ -366,11 +368,12 @@ section img {
   justify-content: space-between;
   height: 5rem;
 }
-.restaurant__icon {
+.restaurant__icon-main {
   position: relative;
   top: 30px;
   right: 25px;
   font-size: 1.4rem;
+  font-weight: 200;
 }
 .restaurant__text {
   margin-left: 20px;
@@ -404,33 +407,69 @@ section img {
   height: 30rem;
   object-fit: cover;
 }
+@media screen and (min-width: 700px) {
+  .main-img {
+    height: 18rem;
+  }
+}
 
 .return {
   color: #000;
   font-size: 1.7rem;
 }
 
-main {
-  background-color: #dfdddd;
+.wrapper-restaurant {
+  background-color: #f7f7f7;
+}
+@media screen and (min-width: 700px) {
+  .wrapper-restaurant {
+    width: 80%;
+    margin: auto;
+  }
 }
 
-.entrees, .plats, .desserts {
-  width: 100%;
+.restaurant__icon {
+  font-size: 2.2rem;
+  margin-right: 4%;
 }
 
 .restaurant-list__title {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: #dfdddd;
-  padding-bottom: 5%;
+  background-color: #f7f7f7;
   position: relative;
   bottom: 100px;
+  padding-bottom: 5%;
   margin-bottom: -120px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
+  margin-top: 2%;
+  align-items: center;
+}
+.restaurant-list__title h1 {
+  margin-left: 2%;
 }
 
+.entrees, .plats, .desserts {
+  width: 100%;
+}
+@media screen and (min-width: 700px) {
+  .entrees, .plats, .desserts {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .entrees, .plats, .desserts {
+    width: 33%;
+  }
+}
+
+.restaurant-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 @media screen and (min-width: 700px) {
   .restaurant-card {
     display: flex;
@@ -441,20 +480,23 @@ main {
 @media screen and (min-width: 700px) {
   .restaurant-card__wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
   }
 }
 .restaurant-card__title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 4%;
   width: 60px;
+  text-transform: uppercase;
   padding-bottom: 10px;
   border-bottom: 4px solid #99E2D0;
-  font-weight: 400;
   margin-left: 2%;
+}
+.restaurant-card__title h2 {
+  font-weight: 400;
 }
 .restaurant-card__card {
   background-color: #FFF;
@@ -469,11 +511,11 @@ main {
 }
 @media screen and (min-width: 700px) {
   .restaurant-card__card {
-    width: 45%;
+    width: 95%;
   }
 }
 .restaurant-card__card--title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   max-height: 65px;
   text-overflow: ellipsis;
@@ -486,7 +528,7 @@ main {
   justify-content: space-between;
 }
 .restaurant-card__card--text {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   max-height: 65px;
   text-overflow: ellipsis;
   overflow: hidden;

@@ -11,7 +11,7 @@
     }    
 
     &__container {
-        width: 90%;
+        width: 100%;
 
     }
 
@@ -26,6 +26,7 @@
                 height: 90px;
                 width: 100%;
                 
+                
             
         
         }
@@ -33,7 +34,11 @@
     }
 
 
-
+.howto__cards-wrapper {
+    @include tablet-only {
+        width: 30%;
+    }
+}
 
 }
 

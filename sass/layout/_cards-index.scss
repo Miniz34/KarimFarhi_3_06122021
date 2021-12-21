@@ -21,6 +21,7 @@
 
 }
 
+
 section img {
 
     object-fit: cover;
@@ -36,6 +37,16 @@ section img {
 
 }
 
+.restaurant__card-wrapper {
+    @include tablet-only{
+        width: 48%;
+        
+    }
+
+    @include desktop-only {
+        width: 24%;
+    }
+}
 
 
 .restaurant {
@@ -59,14 +70,8 @@ section img {
 
 
     &-wrapper {
-        width: 90%;
-            @include tablet-only {
-                display: flex;
-                flex-direction: column;
-                width: 98%;
-                align-items: center;
-        
-            }
+        width: 95%;
+            
         
 
     }
@@ -80,16 +85,7 @@ section img {
         @include secondary-box-shadow;
         @include secondary-border;
 
-        @include tablet-only {
-            min-width: 350px;
-            
-            
-        }
-
-        @include desktop-only {
-            min-width: 275px;
-        }
-
+       
     }
 
     &__img {
@@ -127,11 +123,13 @@ section img {
         height: 5rem;
     }
 
-    &__icon {
+    &__icon-main {
         position: relative;
         top: 30px;
         right: 25px;
         font-size: 1.4rem;
+        font-weight: 200;
+        
 
     }
 
