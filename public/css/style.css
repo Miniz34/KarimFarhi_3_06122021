@@ -46,12 +46,22 @@ header h1 {
     font-size: 1.6rem;
   }
 }
+@media screen and (min-width: 1200px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
 header p {
   font-size: 1.2rem;
 }
 @media screen and (min-width: 700px) {
   header p {
     font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header p {
+    font-size: 1.2rem;
   }
 }
 header .restaurant__img--new p {
@@ -69,7 +79,7 @@ header .restaurant__img--new p {
 }
 @media screen and (min-width: 700px) {
   .mainlogo {
-    height: 30px;
+    height: 40px;
   }
 }
 .mainlogo .mainlogo__img {
@@ -78,7 +88,7 @@ header .restaurant__img--new p {
 }
 @media screen and (min-width: 700px) {
   .mainlogo .mainlogo__img {
-    height: 25px;
+    height: 35px;
   }
 }
 
@@ -96,13 +106,8 @@ header .restaurant__img--new p {
   padding: 10px;
 }
 @media screen and (min-width: 700px) {
-  .localisation__marker {
-    font-size: 6px;
-  }
-}
-@media screen and (min-width: 700px) {
   .localisation__city {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -567,7 +572,7 @@ footer {
     justify-content: space-around;
     margin-left: -8%;
     margin-top: -2%;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 .footercontent__title {
