@@ -357,17 +357,23 @@ section img {
   margin-top: -29px;
 }
 .restaurant__img--new {
+  display: flex;
   text-align: center;
   position: relative;
   margin-left: auto;
   margin-right: 10%;
   margin-bottom: -5%;
   background-color: #99E2D0;
-  width: 85px;
+  width: 90px;
   height: 30px;
 }
 .restaurant__img--new--off {
   opacity: 0;
+}
+.restaurant__img--new p {
+  margin: auto;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 .restaurant__content {
   display: flex;
