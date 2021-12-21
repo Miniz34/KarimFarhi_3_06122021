@@ -338,6 +338,7 @@ section img {
 @media screen and (min-width: 700px) {
   .restaurant__main-title {
     margin-left: 1%;
+    text-align: center;
   }
 }
 .restaurant-wrapper {

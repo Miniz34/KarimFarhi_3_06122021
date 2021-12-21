@@ -62,6 +62,7 @@ section img {
         margin-bottom: 5%;
         @include tablet-only{
             margin-left: 1%;
+            text-align: center;
         }
     }
 
