@@ -32,6 +32,9 @@ a
 .howto {
     p {
         @include font-howto;
+        @include tablet-only{
+            font-size: 1rem;
+        }
     }
 }
 
@@ -39,13 +42,23 @@ a
     @include font-title;
 }
 
-h1 {
-    font-size: 2rem;
-}
+
 
 header{
+
+    h1 {
+        font-family: "Roboto", "sans-serif";
+        font-size: 2rem;
+        font-weight: 700;
+        @include tablet-only{
+            font-size: 1.6rem;
+        }
+    }
+
     p{
         font-size: 1.2rem;
+        @include tablet-only{
+            font-size: 1rem;
     }
 }
 
@@ -55,4 +68,5 @@ header{
         font-weight: 700;
     }
     
+}
 }

@@ -1,1 +1,21 @@
 
+.btn {
+    @include btn;
+    height: 50px;
+    width: 250px;
+    margin-bottom: 10%;
+    @include tablet-only {
+        margin-bottom: 2%;
+    }
+}
+
+
+.btn-restaurant {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}

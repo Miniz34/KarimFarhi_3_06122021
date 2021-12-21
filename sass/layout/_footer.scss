@@ -1,0 +1,65 @@
+.mainlogo--white {
+    height: 1.2rem;
+}
+
+footer {
+    background-color: rgb(59, 59, 59);
+    margin-top: -35px;
+}
+
+.footercontent {
+
+    margin-left: 4%;
+    margin-top: 4%;
+    padding-bottom: 4%;
+    color: $color-white;
+    @include tablet-only{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    &__wrapper {
+        @include tablet-only {
+            display: flex;
+            justify-content: space-around;
+            margin-left: -8%;
+            margin-top: -2%;
+            font-size: 1.2rem;
+        }
+    }
+
+
+    &__title {
+        font-family: 'Shrikhand', 'sans-serif';
+        font-weight: 500;
+        font-size: 1.4rem;
+        padding-top: 4%;
+        margin-bottom: 2%;
+        @include tablet-only {
+            text-align: center;
+            margin-top: -2%;
+            font-size: 1.6rem;
+            margin-left: -2%;
+            
+        }
+    }
+    
+    
+
+    &__icon {
+        font-size: 0.8rem;
+        margin-right: 2%;
+
+        &--2 {
+            font-size: 0.8rem;
+            margin-right: 1%;
+
+        }
+    }
+
+
+    p {
+        @include secondary-margin;
+    }
+}
