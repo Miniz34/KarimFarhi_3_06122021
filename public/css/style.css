@@ -291,14 +291,13 @@ header .restaurant__img--new p {
 @media screen and (min-width: 700px) {
   .restaurant__cards-wrapper {
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
   .restaurant__cards-wrapper {
     display: flex;
-    width: 100%;
-    flex-wrap: nowrap;
-    justify-content: space-between;
   }
 }
 
@@ -504,7 +503,7 @@ section img {
   margin-bottom: 4%;
   width: 60px;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   border-bottom: 4px solid #99E2D0;
   margin-left: 2%;
 }
