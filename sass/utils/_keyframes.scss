@@ -1,0 +1,102 @@
+/* <= Animation de rotation du loader */
+@keyframes loader-main {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes loader-container {
+
+    0% {
+        opacity: 1;
+        transform: rotate(0deg);
+        
+    }
+
+	70% {
+		opacity: 1;
+        
+	}
+	100% {
+		opacity: 0;
+        transform: rotate(2turn);
+        
+        
+       
+        
+        
+	}
+}
+
+
+
+
+
+
+
+
+
+@keyframes btn
+
+{
+    0%{
+        box-shadow: 0px 0px 4px 4px black;
+        transform: scale(1)
+
+   
+
+    }
+    100%{
+        box-shadow: 0px 0px 4px 4px black;
+        transform: scale(1.25);
+
+    }
+}
+
+
+
+
+/* //////////////////RESTAURANT //////////////////////////*/
+/* //////////////////RESTAURANT //////////////////////////*/
+/* //////////////////RESTAURANT //////////////////////////*/
+
+
+/* Animation d'apparition des parties des menus => */
+
+
+@keyframes menu {
+    0%{
+        transform: translateX(150px);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.2;
+    }
+
+    40% {
+        opacity: 0.4;
+
+    }
+
+    60% {
+        opacity: 0.6;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateX(0);
+    } 
+
+
+}
+
+
+

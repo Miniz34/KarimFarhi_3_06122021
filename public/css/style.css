@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   box-sizing: border-box;
   font-family: "roboto", "sans-serif";
@@ -190,11 +189,19 @@ header .restaurant__img--new p {
   height: 50px;
   width: 250px;
   margin-bottom: 10%;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0 #aaa;
+  transition: transform 1s;
 }
 @media screen and (min-width: 700px) {
   .btn {
     margin-bottom: 2%;
   }
+}
+.btn:hover:hover {
+  transform: scale(1.25);
+  background: linear-gradient(#ff50cf, #7d34d5);
+  z-index: 2;
+  box-shadow: 1px 1px 8px 2px black;
 }
 
 .btn-restaurant {
@@ -249,11 +256,13 @@ header .restaurant__img--new p {
   height: 80px;
   padding-left: 50px;
   padding-right: 50px;
-  box-shadow: 0.5rem 0.5rem 0.5rem 0 #aaa;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0 #aaa;
   border-radius: 20px;
 }
 .howto__link:hover {
   background-color: #cec2db;
+  transform: scale(1.08);
+  box-shadow: 1px 1px 8px 2px black;
 }
 .howto__link:hover .howto__logo {
   color: #9356DC;
@@ -348,8 +357,13 @@ section img {
   width: 100%;
   background-color: #FFF;
   margin-bottom: 10%;
-  box-shadow: 0.1rem 0.1rem 1rem 0 #aaa;
+  box-shadow: 0.15rem 0.15rem 15rem 0 #aaa;
   border-radius: 20px;
+  transition: transform 1s;
+}
+.restaurant__card:hover {
+  transform: scale(1.08);
+  box-shadow: 1px 1px 8px 2px black;
 }
 .restaurant__img {
   border-top-left-radius: 20px;
@@ -519,8 +533,12 @@ section img {
   display: flex;
   flex-direction: column;
   padding: 2% 2% 2% 2%;
-  box-shadow: 0.1rem 0.1rem 1rem 0 #aaa;
+  box-shadow: 0.15rem 0.15rem 15rem 0 #aaa;
   flex-wrap: nowrap;
+}
+.restaurant-card__card:hover {
+  transform: scale(1.08);
+  box-shadow: 1px 1px 8px 2px black;
 }
 @media screen and (min-width: 700px) {
   .restaurant-card__card {
@@ -609,68 +627,100 @@ footer {
   margin: 2% 0 0 0;
 }
 
-/* Animation du fond du loader => */
+/* <= Animation de rotation du loader */
+@keyframes loader-main {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes loader-container {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
   70% {
     opacity: 1;
   }
-  99%, 100% {
+  100% {
     opacity: 0;
+    transform: rotate(2turn);
   }
-  70%, 99% {
+}
+@keyframes btn {
+  0% {
+    box-shadow: 0px 0px 4px 4px black;
     transform: scale(1);
   }
   100% {
-    transform: scale(0);
-    /* Pour que le loadeur disparaisse à la fin de l'animation */
+    box-shadow: 0px 0px 4px 4px black;
+    transform: scale(1.25);
   }
 }
-/* <= Animation du fond du loader */
-/* Animation de rotation du loader => */
-@keyframes loader-rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-}
-/* <= Animation de rotation du loader */
+/* //////////////////RESTAURANT //////////////////////////*/
+/* //////////////////RESTAURANT //////////////////////////*/
+/* //////////////////RESTAURANT //////////////////////////*/
 /* Animation d'apparition des parties des menus => */
-@keyframes menu-appear {
-  from {
+@keyframes menu {
+  0% {
+    transform: translateX(150px);
     opacity: 0;
-    transform: translateX(5rem);
   }
-  to {
-    opacity: 1;
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
     transform: translateX(0);
   }
 }
-/* <= Animation d'apparition des parties des menus */
-.loader {
-  animation: loader-rotate 1s infinite linear;
-  /* L'animation s'effectue à vitesse constante*/
-  border-radius: 50%;
-  border: 1rem solid blue;
-  border-left: 1rem solid green;
-  width: 10rem;
-  height: 10rem;
-}
 .loader-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  /* Pour que le loadeur soit toujours à la meme position sur l'écran */
-  top: 0;
-  left: 0;
+  z-index: -1;
+}
+
+.loader-img {
   width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.4);
-  animation: loader-container forwards 2s;
-  /* La cible retiendra les valeurs calculées définies lors de la dernière étape */
-  z-index: 99;
+  object-fit: cover;
+}
+
+.loader2 {
+  opacity: 0;
+  width: 30%;
+  height: 50%;
+  position: absolute;
+  overflow: hidden;
+  margin-top: 20%;
+  margin-left: 35%;
+  z-index: -1;
+  animation: loader-container 2500ms ease-in-out;
+}
+
+#main_wrapper {
+  animation: loader-main 4s;
+  opacity: 1;
+}
+
+.loader-restaurant {
+  animation: menu 1s 150ms cubic-bezier(0.04, 0.9, 0.68, 1.02) both;
+}
+.loader-restaurant--1 {
+  animation-delay: 1s;
+}
+.loader-restaurant--2 {
+  animation-delay: 2s;
+}
+.loader-restaurant--3 {
+  animation-delay: 3s;
 }
 
 /*# sourceMappingURL=style.css.map */

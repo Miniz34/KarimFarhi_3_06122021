@@ -85,6 +85,11 @@ section img {
 
         @include secondary-box-shadow;
         @include secondary-border;
+        transition: transform 1s;
+
+        &:hover {
+        @include hover-cards;
+        }
 
        
     }
@@ -163,6 +168,7 @@ section img {
     }
 
     }
+
 
 }
 

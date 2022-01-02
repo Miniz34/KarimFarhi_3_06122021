@@ -8,69 +8,8 @@
 @import "./layout/cards-index";
 @import "./layout/restaurant";
 @import "./layout/footer";
+@import "./utils/keyframes";
+@import "./pages/loader-index";
+@import "./pages/loader-restaurant";
 
 
-/* Animation du fond du loader => */
-@keyframes loader-container {
-	70% {
-		opacity: 1;
-	}
-	99%,
-	100% {
-		opacity: 0;
-	}
-	70%,
-	99% {
-		transform: scale(1);
-	}
-	100% {
-		transform: scale(0); /* Pour que le loadeur disparaisse à la fin de l'animation */
-	}
-}
-/* <= Animation du fond du loader */
-
-/* Animation de rotation du loader => */
-@keyframes loader-rotate {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(1turn);
-	}
-}
-/* <= Animation de rotation du loader */
-
-/* Animation d'apparition des parties des menus => */
-@keyframes menu-appear {
-	from {
-		opacity: 0;
-		transform: translateX(5rem);
-	}
-	to {
-		opacity: 1;
-		transform: translateX(0);
-	}
-}
-/* <= Animation d'apparition des parties des menus */
-
-.loader {
-	animation: loader-rotate 1s infinite linear; /* L'animation s'effectue à vitesse constante*/
-	border-radius: 50%;
-	border: 1rem solid blue;
-	border-left: 1rem solid green;
-	width: 10rem;
-	height: 10rem;
-	&-container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: fixed; /* Pour que le loadeur soit toujours à la meme position sur l'écran */
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: adjust-color(white, $alpha: -0.6);
-		animation: loader-container forwards 2s; /* La cible retiendra les valeurs calculées définies lors de la dernière étape */
-		z-index: 99;
-	}
-}

@@ -68,6 +68,8 @@
 
     &:hover {
         background-color: #cec2db;
+        @include hover-cards;
+        
 
         .howto__logo {
             color: $color-primary;

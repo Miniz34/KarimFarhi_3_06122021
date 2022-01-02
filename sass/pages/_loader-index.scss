@@ -1,0 +1,46 @@
+
+.loader-container {
+    
+    z-index: -1;
+}
+
+.loader-img {
+
+
+
+    width: 100%;
+    object-fit: cover;
+    
+   
+    
+
+
+
+}
+
+.loader2 {
+
+    opacity: 0;
+    width: 30%;
+    height: 50%;
+    
+    position: absolute;
+    overflow: hidden;
+ margin-top: 20%;
+  margin-left: 35%;
+  z-index: -1;
+ 
+
+    
+    
+animation: loader-container 2500ms ease-in-out;
+
+}
+
+#main_wrapper 
+
+{
+    animation: loader-main 4s;
+    opacity: 1;
+}
+
