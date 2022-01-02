@@ -98,5 +98,30 @@
 
 }
 
+/* V validation menu => */
+
+@keyframes validation {
+    0% {
+        transform: rotate(0deg);
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: rotate(1turn);
+        transform: translateX(-58px);
+    }
+}
+
+@keyframes rotate-check {
+    0% {
+        transform: rotate(0deg);
+        
+    }
+
+    100% {
+        transform: rotate(1turn);
+        
+    }
+}
 
 

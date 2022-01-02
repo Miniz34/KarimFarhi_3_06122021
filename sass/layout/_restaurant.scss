@@ -3,7 +3,7 @@
     height: 30rem;
     object-fit: cover;
 
-    @include tablet-only{
+    @include tablet-only {
         height: 18rem;
     }
 }
@@ -16,22 +16,23 @@
 
 .wrapper-restaurant {
     background-color: $color-background-solid;
-    @include tablet-only{
-    width: 80%;
-    margin: auto;
+
+    @include tablet-only {
+        width: 80%;
+        margin: auto;
     }
 
 }
 
 
 .restaurant__icon {
-       
-        
+
+
     font-size: 2.2rem;
     margin-right: 4%;
-    
 
-    
+
+
 
 
 
@@ -51,21 +52,25 @@
     @include tertiary-border;
     margin-top: 2%;
     align-items: center;
-    
+
 
     h1 {
         margin-left: 2%;
-        
+
     }
 
 }
 
 
-.entrees, .plats, .desserts {
+.entrees,
+.plats,
+.desserts {
     width: 100%;
+
     @include tablet-only {
         width: 50%;
     }
+
     @include desktop-only {
         width: 33%;
     }
@@ -77,30 +82,41 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
 
-    
-    
+
+
+
 
 }
 
 .restaurant-card {
     
+    
+
     @include tablet-only {
         display: flex;
         flex-direction: column;
         align-items: center;
         
+
+
+
+    }
+
+    &__maintext {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         
-        
-    }    
-    
+    }
+
 
 
     &__wrapper {
-        
 
-        
+
+
         @include tablet-only {
             display: flex;
             flex-direction: column;
@@ -108,9 +124,9 @@
             justify-content: center;
             width: 100%;
         }
-      
-        
-     
+
+
+
     }
 
     &__title {
@@ -132,27 +148,59 @@
     &__card {
         background-color: $color-white;
         width: 95%;
+        max-width: 400px;
         margin-bottom: 4%;
         @include secondary-border;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         padding: 2% 2% 2% 2%;
         @include secondary-box-shadow;
         flex-wrap: nowrap;
-        
+        overflow: hidden;
+        position: relative;
+
 
         &:hover {
             @include hover-cards;
             
+                & > .restaurant-card__card--check{
+
+                    transform: translateX(-3.5rem);
+                    
+
+                    & > .restaurant-card__card--check-active {
+
+                
+                   
+
+                    & > .restaurant-card__card--check-active2 { 
+                        transform: rotate(1turn);
+                        
+                    }
+
+                   
+                }
+
+                
+            }
+        
+
+            
+           
+
+
+
         }
 
         @include tablet-only {
             width: 95%;
-            
-        }
-        
 
-        
+        }
+
+
+
+
+
 
         &--title {
             font-size: 1.2rem;
@@ -167,7 +215,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            
+
         }
 
         &--text {
@@ -186,21 +234,64 @@
 
 }
 
-.restaurant-card__card--fullcontent {
-  
-    
+
+
+
+
+
+.restaurant-card__card--check {
+
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    width: 100%;
-    background-color: blue;
+    flex-direction: row;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    right: -4.6rem;
+    height: 50px;
+    width: 30%;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    
+    &-price {
+        margin-right: 10px;
+        margin-left: -10px;
+        @include tablet-only {
+            margin-left: -20px;
+        }
+    }
 
+    &-active {
+        width: 60px;
+            height: 100px;
+            background-color: rgb(113, 255, 113);
+            margin-bottom: -20px;
 
+            &2 {
+                transition-duration: 1s;
+                        transition-timing-function: ease-in-out;
+                        margin-right: auto;
+                        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        
+        
+        font-size: 1.6rem;
+            }
+            
+          
+    }
+
+    .fas {
+        
+        
+    }
+
+   
 }
-.restaurant-card__card--active {
 
-    width: 50px;
-    height: 60px;
-    background-color: green;
 
-}

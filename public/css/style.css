@@ -478,16 +478,22 @@ section img {
   margin-left: 2%;
 }
 
-.entrees, .plats, .desserts {
+.entrees,
+.plats,
+.desserts {
   width: 100%;
 }
 @media screen and (min-width: 700px) {
-  .entrees, .plats, .desserts {
+  .entrees,
+.plats,
+.desserts {
     width: 50%;
   }
 }
 @media screen and (min-width: 1200px) {
-  .entrees, .plats, .desserts {
+  .entrees,
+.plats,
+.desserts {
     width: 33%;
   }
 }
@@ -503,6 +509,12 @@ section img {
     flex-direction: column;
     align-items: center;
   }
+}
+.restaurant-card__maintext {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media screen and (min-width: 700px) {
   .restaurant-card__wrapper {
@@ -528,17 +540,26 @@ section img {
 .restaurant-card__card {
   background-color: #FFF;
   width: 95%;
+  max-width: 400px;
   margin-bottom: 4%;
   border-radius: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 2% 2% 2% 2%;
   box-shadow: 0.15rem 0.15rem 15rem 0 #aaa;
   flex-wrap: nowrap;
+  overflow: hidden;
+  position: relative;
 }
 .restaurant-card__card:hover {
   transform: scale(1.08);
   box-shadow: 1px 1px 8px 2px black;
+}
+.restaurant-card__card:hover > .restaurant-card__card--check {
+  transform: translateX(-3.5rem);
+}
+.restaurant-card__card:hover > .restaurant-card__card--check > .restaurant-card__card--check-active > .restaurant-card__card--check-active2 {
+  transform: rotate(1turn);
 }
 @media screen and (min-width: 700px) {
   .restaurant-card__card {
@@ -570,20 +591,47 @@ section img {
   margin-right: 3%;
 }
 
-.restaurant-card__card--fullcontent {
+.restaurant-card__card--check {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  width: 100%;
-  background-color: blue;
+  flex-direction: row;
+  align-items: flex-end;
+  position: absolute;
+  top: 0;
+  right: -4.6rem;
+  height: 50px;
+  width: 30%;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
 }
-
-.restaurant-card__card--active {
-  width: 50px;
-  height: 60px;
-  background-color: green;
+.restaurant-card__card--check-price {
+  margin-right: 10px;
+  margin-left: -10px;
 }
-
+@media screen and (min-width: 700px) {
+  .restaurant-card__card--check-price {
+    margin-left: -20px;
+  }
+}
+.restaurant-card__card--check-active {
+  width: 60px;
+  height: 100px;
+  background-color: #71ff71;
+  margin-bottom: -20px;
+}
+.restaurant-card__card--check-active2 {
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  font-size: 1.6rem;
+}
 .mainlogo--white {
   height: 1.2rem;
 }
@@ -696,6 +744,25 @@ footer {
   }
   100% {
     transform: translateX(0);
+  }
+}
+/* V validation menu => */
+@keyframes validation {
+  0% {
+    transform: rotate(0deg);
+    transform: translateX(0);
+  }
+  100% {
+    transform: rotate(1turn);
+    transform: translateX(-58px);
+  }
+}
+@keyframes rotate-check {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1turn);
   }
 }
 .loader-container {
