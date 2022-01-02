@@ -804,14 +804,54 @@ footer {
   animation-delay: 0s;
 }
 
-.far {
-  background-color: green;
-  position: relative;
-  width: 100%;
+.heart-container {
+  margin-right: 10%;
+}
+.heart-container:hover {
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heart-container:hover > .heart--card {
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heart-container:hover > .heart--card + .heart-full {
+  animation: heart 600ms forwards cubic-bezier(0.95, 0.01, 1, 0.03);
 }
 
-.restaurant__icon {
+.heart--card {
+  position: absolute;
+  font-size: 1.5rem;
+  color: black;
+  transition-duration: 1s;
+}
+
+.heart-full {
   position: relative;
+  font-size: 1.5rem;
+  opacity: 1;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(0);
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.heart-container-main {
+  position: relative;
+  top: 30px;
+  right: 0px;
+  font-size: 1.4rem;
+  font-weight: 200;
 }
 
 /*# sourceMappingURL=style.css.map */
