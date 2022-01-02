@@ -804,4 +804,14 @@ footer {
   animation-delay: 0s;
 }
 
+.far {
+  background-color: green;
+  position: relative;
+  width: 100%;
+}
+
+.restaurant__icon {
+  position: relative;
+}
+
 /*# sourceMappingURL=style.css.map */
