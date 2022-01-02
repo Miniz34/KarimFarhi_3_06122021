@@ -185,3 +185,22 @@
     }
 
 }
+
+.restaurant-card__card--fullcontent {
+  
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: blue;
+
+
+}
+.restaurant-card__card--active {
+
+    width: 50px;
+    height: 60px;
+    background-color: green;
+
+}
