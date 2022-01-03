@@ -14,24 +14,16 @@ footer {
     color: white;
 
    
-    @include tablet-only{
-        display: flex;
-        flex-direction: column;
+   
         
-    }
+    
 
     &__wrapper {
 
         
 
         
-        @include tablet-only {
-            display: flex;
-            justify-content: space-around;
-            margin-left: -8%;
-            margin-top: -2%;
-            font-size: 1rem;
-        }
+       
 
         & ul{
             display: flex;
@@ -41,6 +33,15 @@ footer {
             justify-content: space-around;
             width: 100%;
             color: white;
+
+        @include tablet-only {
+            display: flex;
+            flex-direction: row;
+            margin-left: -4%;
+            
+            
+            
+        }
         }
 
         & li {
@@ -69,6 +70,7 @@ footer {
             text-align: center;
             margin-top: -2%;
             font-size: 1.6rem;
+            margin-left: 0%;
             
             
         }

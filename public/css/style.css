@@ -24,7 +24,7 @@ a {
 .howto p {
   font-size: 20px;
   font-weight: 550;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 @media screen and (min-width: 700px) {
   .howto p {
@@ -99,9 +99,10 @@ header .restaurant__img--new p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: rgba(141, 139, 139, 0.479);
+  background-color: #eaeaea;
   width: 100%;
-  box-shadow: 0 -5px 5px -5px, 5px 0 0px -5px, 0 3px 3px -5px inset, -5px 0 0px -5px;
+  box-shadow: 0 0 0.25rem 0.125rem #777777;
+  /*---- box-shadow: box-shadow: 0 -5px 5px -5px #333; ---*/
 }
 .localisation__marker {
   font-size: 8px;
@@ -117,7 +118,7 @@ header .restaurant__img--new p {
 }
 
 .header-wrapper {
-  background-color: rgba(223, 221, 221, 0.719);
+  background-color: #f6f6f6;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -259,7 +260,7 @@ header .restaurant__img--new p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgba(223, 221, 221, 0.719);
+  background-color: #f6f6f6;
   margin-bottom: 10%;
   height: 80px;
   padding-left: 50px;
@@ -283,7 +284,12 @@ header .restaurant__img--new p {
   background-color: #9356DC;
   width: 25px;
   height: 25px;
+  text-align: center;
   border-radius: 80%;
+}
+.howto__number p {
+  margin-top: 2px;
+  font-weight: 400;
 }
 @media screen and (min-width: 700px) {
   .howto__number {
@@ -294,6 +300,7 @@ header .restaurant__img--new p {
 
 .howto__logo {
   margin-right: 25px;
+  font-size: 1.3rem;
   color: rgba(87, 87, 87, 0.479);
 }
 
@@ -341,7 +348,7 @@ section img {
 }
 
 .restaurant {
-  background-color: rgba(223, 221, 221, 0.719);
+  background-color: #f6f6f6;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -358,7 +365,8 @@ section img {
   }
 }
 .restaurant-wrapper {
-  width: 95%;
+  width: 90%;
+  padding-top: 30px;
 }
 .restaurant__card {
   width: 100%;
@@ -414,6 +422,7 @@ section img {
 }
 .restaurant__text h3 {
   margin-top: 8px;
+  font-size: 1.3rem;
 }
 @media screen and (min-width: 700px) {
   .restaurant__text h3 {
@@ -422,6 +431,7 @@ section img {
 }
 .restaurant__text p {
   margin-top: -20px;
+  font-size: 1.1rem;
 }
 @media screen and (min-width: 700px) {
   .restaurant__text p {
@@ -653,21 +663,6 @@ footer {
   flex-direction: column;
   color: white;
 }
-@media screen and (min-width: 700px) {
-  .footercontent {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 700px) {
-  .footercontent__wrapper {
-    display: flex;
-    justify-content: space-around;
-    margin-left: -8%;
-    margin-top: -2%;
-    font-size: 1rem;
-  }
-}
 .footercontent__wrapper ul {
   display: flex;
   flex-direction: column;
@@ -676,6 +671,13 @@ footer {
   justify-content: space-around;
   width: 100%;
   color: white;
+}
+@media screen and (min-width: 700px) {
+  .footercontent__wrapper ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: -4%;
+  }
 }
 .footercontent__wrapper li {
   margin-bottom: 20px;
@@ -700,6 +702,7 @@ footer {
     text-align: center;
     margin-top: -2%;
     font-size: 1.6rem;
+    margin-left: 0%;
   }
 }
 .footercontent__icon {

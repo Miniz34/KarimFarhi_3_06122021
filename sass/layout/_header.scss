@@ -33,7 +33,10 @@
     justify-content: center;
     background-color: $color-background-1;
     width: 100%;
-    box-shadow:  0 -5px 5px -5px, 5px 0 0px -5px, 0 3px 3px -5px inset, -5px 0 0px -5px;
+    box-shadow: 0 0 0.25rem 0.125rem #777777;
+
+    /*---- box-shadow: box-shadow: 0 -5px 5px -5px #333; ---*/
+    
     
 
     &__marker

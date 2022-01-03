@@ -71,7 +71,8 @@ section img {
 
 
     &-wrapper {
-        width: 95%;
+        width: 90%;
+        padding-top: 30px;
             
         
 
@@ -154,6 +155,7 @@ section img {
 
         h3 {
             margin-top: 8px;
+            font-size: 1.3rem;
             @include tablet-only {
                 font-size: 18px;
         }
@@ -161,6 +163,7 @@ section img {
 
         p {
             margin-top: -20px;
+            font-size: 1.1rem;
             @include tablet-only {
                 font-size: 14px;
                 margin-top: -15px;
