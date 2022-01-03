@@ -8,11 +8,12 @@ footer {
 }
 
 .footercontent {
+    
+    display: flex;
+    flex-direction: column;
+    color: white;
 
-    margin-left: 4%;
-    margin-top: 4%;
-    padding-bottom: 4%;
-    color: $color-white;
+   
     @include tablet-only{
         display: flex;
         flex-direction: column;
@@ -20,12 +21,39 @@ footer {
     }
 
     &__wrapper {
+
+        
+
+        
         @include tablet-only {
             display: flex;
             justify-content: space-around;
             margin-left: -8%;
             margin-top: -2%;
             font-size: 1rem;
+        }
+
+        & ul{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+            list-style-type: none;
+            justify-content: space-around;
+            width: 100%;
+            color: white;
+        }
+
+        & li {
+            margin-bottom: 20px;
+        }
+
+        & a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 
@@ -36,11 +64,12 @@ footer {
         font-size: 1.4rem;
         padding-top: 4%;
         margin-bottom: 2%;
+        margin-left: 10%;
         @include tablet-only {
             text-align: center;
             margin-top: -2%;
             font-size: 1.6rem;
-            margin-left: -2%;
+            
             
         }
     }

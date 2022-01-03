@@ -1,7 +1,7 @@
 
 .mainlogo 
 {
-    height: 50px;
+    height: 45px;
     @include tablet-only {
         height: 40px;
     }
@@ -26,6 +26,7 @@
 .localisation 
 
 {
+    height: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -43,6 +44,8 @@
         
     }
     &__city {
+
+        margin-left: 8px;
         @include tablet-only {
             font-size: 1.2rem;
         }
@@ -75,9 +78,9 @@
 
 {
     
-    width: 70%;
+    width: 80%;
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
     @include tablet-only {
         display: flex;
         flex-direction: column;
@@ -85,6 +88,11 @@
         
         
     }
+
+    &__title {
+        width: 100%;
+    }
+    
 }
 
 

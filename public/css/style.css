@@ -22,6 +22,7 @@ a {
 }
 
 .howto p {
+  font-size: 20px;
   font-weight: 550;
   font-size: 1.3rem;
 }
@@ -38,7 +39,7 @@ a {
 
 header h1 {
   font-family: "Roboto", "sans-serif";
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 @media screen and (min-width: 700px) {
@@ -52,7 +53,7 @@ header h1 {
   }
 }
 header p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 @media screen and (min-width: 700px) {
   header p {
@@ -75,7 +76,7 @@ header .restaurant__img--new p {
 }
 
 .mainlogo {
-  height: 50px;
+  height: 45px;
 }
 @media screen and (min-width: 700px) {
   .mainlogo {
@@ -93,6 +94,7 @@ header .restaurant__img--new p {
 }
 
 .localisation {
+  height: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -104,6 +106,9 @@ header .restaurant__img--new p {
 .localisation__marker {
   font-size: 8px;
   padding: 10px;
+}
+.localisation__city {
+  margin-left: 8px;
 }
 @media screen and (min-width: 700px) {
   .localisation__city {
@@ -131,9 +136,9 @@ header .restaurant__img--new p {
 }
 
 .headercontent {
-  width: 70%;
+  width: 80%;
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 }
 @media screen and (min-width: 700px) {
   .headercontent {
@@ -141,6 +146,9 @@ header .restaurant__img--new p {
     flex-direction: column;
     margin-top: 0px;
   }
+}
+.headercontent__title {
+  width: 100%;
 }
 
 /*------------------------------*/
@@ -229,7 +237,7 @@ header .restaurant__img--new p {
   }
 }
 .howto__container {
-  width: 98%;
+  width: 90%;
 }
 @media screen and (min-width: 700px) {
   .howto__cards {
@@ -255,7 +263,6 @@ header .restaurant__img--new p {
   margin-bottom: 10%;
   height: 80px;
   padding-left: 50px;
-  padding-right: 50px;
   box-shadow: 0.1rem 0.1rem 0.1rem 0 #aaa;
   border-radius: 20px;
 }
@@ -642,10 +649,9 @@ footer {
 }
 
 .footercontent {
-  margin-left: 4%;
-  margin-top: 4%;
-  padding-bottom: 4%;
-  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
 @media screen and (min-width: 700px) {
   .footercontent {
@@ -662,19 +668,38 @@ footer {
     font-size: 1rem;
   }
 }
+.footercontent__wrapper ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  list-style-type: none;
+  justify-content: space-around;
+  width: 100%;
+  color: white;
+}
+.footercontent__wrapper li {
+  margin-bottom: 20px;
+}
+.footercontent__wrapper a {
+  color: white;
+  text-decoration: none;
+}
+.footercontent__wrapper a:hover {
+  text-decoration: underline;
+}
 .footercontent__title {
   font-family: "Shrikhand", "sans-serif";
   font-weight: 500;
   font-size: 1.4rem;
   padding-top: 4%;
   margin-bottom: 2%;
+  margin-left: 10%;
 }
 @media screen and (min-width: 700px) {
   .footercontent__title {
     text-align: center;
     margin-top: -2%;
     font-size: 1.6rem;
-    margin-left: -2%;
   }
 }
 .footercontent__icon {
@@ -783,7 +808,7 @@ footer {
   margin-top: 20%;
   margin-left: 35%;
   z-index: -1;
-  animation: loader-container 2500ms ease-in-out;
+  animation: loader-container 0ms ease-in-out;
 }
 
 #main_wrapper {
