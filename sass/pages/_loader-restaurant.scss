@@ -11,7 +11,7 @@ $anim-delay: calc($anim-dur / $num-bars);
     animation: menu 1s 150ms cubic-bezier(.04,.9,.68,1.02) both;
     @for $i from 1 through 3 {
         &--#{$i} {
-            animation-delay: 0s * $i;
+            animation-delay: 1s * $i;
          }
     }
 }
