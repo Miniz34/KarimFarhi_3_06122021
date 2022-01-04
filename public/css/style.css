@@ -753,7 +753,7 @@ footer {
 /* Animation d'apparition des parties des menus => */
 @keyframes menu {
   0% {
-    transform: translateX(150px);
+    transform: translateY(150px);
     opacity: 0;
   }
   20% {
@@ -769,7 +769,7 @@ footer {
     opacity: 0.8;
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 /* V validation menu => */
@@ -821,13 +821,13 @@ footer {
   animation: menu 1s 150ms cubic-bezier(0.04, 0.9, 0.68, 1.02) both;
 }
 .loader-restaurant--1 {
-  animation-delay: 0s;
+  animation-delay: 1s;
 }
 .loader-restaurant--2 {
-  animation-delay: 0s;
+  animation-delay: 2s;
 }
 .loader-restaurant--3 {
-  animation-delay: 0s;
+  animation-delay: 3s;
 }
 
 .heart-container {
