@@ -191,7 +191,7 @@ header .restaurant__img--new p {
 
 .btn {
   color: white;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff50cf, #7d34d5);
   border-radius: 40px;
   border: 0px;
   font-size: 1.1rem;
@@ -207,10 +207,11 @@ header .restaurant__img--new p {
   }
 }
 .btn:hover:hover {
-  transform: scale(1.25);
-  background: linear-gradient(#ff50cf, #7d34d5);
+  transform: scale(0.9);
+  background: linear-gradient(#FF79DA, #9356DC);
+  /*background: linear-gradient(ligthen($color-secondary, 15), darken($color-primary, 15));*/
   z-index: 2;
-  box-shadow: 1px 1px 8px 2px black;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0 #5e5e5e;
 }
 
 .btn-restaurant {
@@ -218,11 +219,8 @@ header .restaurant__img--new p {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-@media screen and (min-width: 700px) {
-  .btn-restaurant {
-    margin-top: 2%;
-  }
+  margin-bottom: 10%;
+  margin-top: 10%;
 }
 
 .howto {
@@ -270,7 +268,7 @@ header .restaurant__img--new p {
 .howto__link:hover {
   background-color: #cec2db;
   transform: scale(1.08);
-  box-shadow: 1px 1px 8px 2px black;
+  box-shadow: 0.5px 0.5px 15px 0 #777777;
 }
 .howto__link:hover .howto__logo {
   color: #9356DC;
@@ -356,7 +354,7 @@ section img {
   padding-bottom: 40px;
 }
 .restaurant__main-title {
-  margin-bottom: 5%;
+  margin-bottom: 8%;
 }
 @media screen and (min-width: 700px) {
   .restaurant__main-title {
@@ -372,13 +370,13 @@ section img {
   width: 100%;
   background-color: #FFF;
   margin-bottom: 10%;
-  box-shadow: 0.15rem 0.15rem 15rem 0 #aaa;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0 #aaa;
   border-radius: 20px;
   transition: transform 1s;
 }
 .restaurant__card:hover {
   transform: scale(1.08);
-  box-shadow: 1px 1px 8px 2px black;
+  box-shadow: 0.5px 0.5px 15px 0 #777777;
 }
 .restaurant__img {
   border-top-left-radius: 20px;
@@ -511,7 +509,8 @@ section img {
   .entrees,
 .plats,
 .desserts {
-    width: 31%;
+    width: 33%;
+    margin: none;
   }
 }
 
@@ -529,6 +528,7 @@ section img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 0%;
   }
 }
 .restaurant-card__wrapper {
@@ -557,10 +557,9 @@ section img {
 }
 
 .restaurant-card__card {
-  box-shadow: 0.15rem 0.15rem 15rem 0 #aaa;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0 #aaa;
   background-color: #FFF;
   width: 95%;
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -571,19 +570,21 @@ section img {
 .restaurant-card__card--check {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  transform: translateX(50px);
-  transition-duration: 1s;
 }
 .restaurant-card__card--check-price {
-  margin-right: 15px;
-  margin-top: 24px;
+  margin-top: 36px;
   font-weight: 700;
+  transform: translateX(40px);
+  transition-duration: 1s;
+  transition-delay: 50ms;
 }
 .restaurant-card__card--check-active {
   background-color: #99e2d0;
   height: 65px;
   width: 50px;
+  position: relative;
+  transform: translateX(50px);
+  transition-duration: 1s;
 }
 .restaurant-card__card--check-active2 {
   color: white;
@@ -593,7 +594,7 @@ section img {
 }
 .restaurant-card__card:hover {
   transform: scale(1.08);
-  box-shadow: 1px 1px 8px 2px black;
+  box-shadow: 0.5px 0.5px 15px 0 #777777;
 }
 .restaurant-card__card:hover > .restaurant-card__card-maintext {
   width: 65%;
@@ -603,7 +604,10 @@ section img {
   overflow: hidden;
   white-space: nowrap;
 }
-.restaurant-card__card:hover > .restaurant-card__card--check {
+.restaurant-card__card:hover > .restaurant-card__card--check > .restaurant-card__card--check-price {
+  transform: translateX(0);
+}
+.restaurant-card__card:hover > .restaurant-card__card--check > .restaurant-card__card--check-active {
   transform: translateX(0);
 }
 .restaurant-card__card:hover > .restaurant-card__card--check > .restaurant-card__card--check-active > .restaurant-card__card--check-active2 {
@@ -612,6 +616,8 @@ section img {
 .restaurant-card__card-maintext {
   width: 70%;
   margin-left: 3%;
+  padding-right: -10%;
+  transition-duration: 1s;
 }
 .restaurant-card__card--title {
   overflow: hidden;
@@ -619,9 +625,14 @@ section img {
   text-overflow: ellipsis;
   font-weight: 700;
   margin-top: 4%;
+  font-size: 1rem;
 }
 .restaurant-card__card--text {
   margin-top: 2%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.9rem;
 }
 
 .restaurant-card__card--check-active2 {

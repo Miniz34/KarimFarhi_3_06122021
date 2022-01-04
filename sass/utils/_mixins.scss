@@ -22,8 +22,8 @@
     box-shadow: 0.15rem 0.15rem 15rem 0 $color;
 }
 
-@mixin btn-box-shadow {
-    box-shadow: 1px 1px 8px 2px black;
+@mixin btn-box-shadow ($color: $box-shadow-color) {
+    box-shadow: 0.5px 0.5px 15px 0 darken($color, 20);
 }
 
 @mixin primary-border($color: $box-shadow-color){
@@ -43,7 +43,7 @@
 
 @mixin btn($color: linear-gradient($color-secondary,$color-primary)){
     color: white;
-    background: linear-gradient($color-secondary,$color-primary);
+    background: linear-gradient(darken($color-secondary, 8), darken($color-primary, 8));
     border-radius: 40px;
     border: 0px;
     font-size: 1.1rem;
@@ -102,11 +102,13 @@
     &:hover {
 
         
-        transform: scale(1.25);
-        background: linear-gradient(darken($color-secondary, 8), darken($color-primary, 8));
+        transform: scale(0.90);
+        
+        background: linear-gradient($color-secondary,$color-primary);
+        /*background: linear-gradient(ligthen($color-secondary, 15), darken($color-primary, 15));*/
         z-index: 2;
 
-            @include btn-box-shadow;
+            @include primary-box-shadow(darken($box-shadow-color, 30%))
             
     }
 }

@@ -59,7 +59,7 @@ section img {
 
 
     &__main-title {
-        margin-bottom: 5%;
+        margin-bottom: 8%;
         @include tablet-only{
             margin-left: 1%;
             text-align: center;
@@ -84,7 +84,7 @@ section img {
         background-color: $color-white;
         margin-bottom: 10%;
 
-        @include secondary-box-shadow;
+        @include primary-box-shadow;
         @include secondary-border;
         transition: transform 1s;
 
