@@ -84,7 +84,7 @@ header .restaurant__img--new p {
   }
 }
 .mainlogo .mainlogo__img {
-  height: 35px;
+  height: 30px;
   width: 100%;
 }
 @media screen and (min-width: 700px) {
@@ -150,6 +150,9 @@ header .restaurant__img--new p {
 }
 .headercontent__title {
   width: 100%;
+}
+.headercontent__text {
+  font-weight: 300;
 }
 
 /*------------------------------*/
@@ -370,6 +373,7 @@ section img {
   width: 100%;
   background-color: #FFF;
   margin-bottom: 10%;
+  height: 275px;
   box-shadow: 0.1rem 0.1rem 0.1rem 0 #aaa;
   border-radius: 20px;
   transition: transform 1s;
@@ -664,7 +668,7 @@ footer {
 .footercontent__wrapper ul {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   list-style-type: none;
   justify-content: space-around;
   width: 100%;
@@ -678,7 +682,7 @@ footer {
   }
 }
 .footercontent__wrapper li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .footercontent__wrapper a {
   color: white;
@@ -690,9 +694,9 @@ footer {
 .footercontent__title {
   font-family: "Shrikhand", "sans-serif";
   font-weight: 500;
-  font-size: 1.4rem;
-  padding-top: 4%;
-  margin-bottom: 2%;
+  font-size: 1.2rem;
+  padding-top: 0%;
+  margin-bottom: -5px;
   margin-left: 10%;
 }
 @media screen and (min-width: 700px) {
@@ -874,7 +878,7 @@ footer {
 }
 .heart-container-main {
   position: relative;
-  top: 30px;
+  top: 15px;
   right: 0px;
   font-size: 1.4rem;
   font-weight: 200;

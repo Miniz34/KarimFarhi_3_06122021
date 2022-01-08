@@ -41,6 +41,7 @@ section img {
     @include tablet-only{
         width: 48%;
         
+        
     }
 
     @include desktop-only {
@@ -83,6 +84,7 @@ section img {
         width: 100%;
         background-color: $color-white;
         margin-bottom: 10%;
+        height: 275px;
 
         @include primary-box-shadow;
         @include secondary-border;
