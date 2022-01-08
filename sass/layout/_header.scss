@@ -114,10 +114,15 @@
 
 
 
+
+
 .second-header-wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
+    @include tablet-only {
+        
+    }
     
 }
 
@@ -126,13 +131,13 @@
     display: flex;
     align-items:center;
     justify-content: center;
-    height: 35px;
+    height: 60px;
     
     
     
 
     img {
-        height: 25px;
+        height: 30px;
         
     }
 

@@ -167,15 +167,14 @@ header .restaurant__img--new p {
   flex-direction: column;
   width: 100%;
 }
-
 .mainlogo-restaurant {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 35px;
+  height: 60px;
 }
 .mainlogo-restaurant img {
-  height: 25px;
+  height: 30px;
 }
 .mainlogo-restaurant .return {
   position: absolute;
@@ -206,6 +205,7 @@ header .restaurant__img--new p {
 @media screen and (min-width: 700px) {
   .btn {
     margin-bottom: 2%;
+    cursor: pointer;
   }
 }
 .btn:hover:hover {
@@ -221,8 +221,13 @@ header .restaurant__img--new p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10%;
-  margin-top: 10%;
+  padding-bottom: 10%;
+  margin-top: 2%;
+}
+@media screen and (min-width: 700px) {
+  .btn-restaurant {
+    padding-bottom: 5%;
+  }
 }
 
 .howto {
@@ -493,9 +498,20 @@ section img {
   margin-top: 10%;
   align-items: center;
 }
+@media screen and (min-width: 700px) {
+  .restaurant-list__title {
+    padding-top: 2%;
+  }
+}
 .restaurant-list__title h1 {
   margin-left: 5%;
   font-size: 1.5rem;
+}
+@media screen and (min-width: 700px) {
+  .restaurant-list__title h1 {
+    font-size: 2.5rem;
+    margin-left: 2%;
+  }
 }
 @media screen and (min-width: 700px) {
   .restaurant-list__title {
@@ -572,6 +588,7 @@ section img {
   width: 98%;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -664,7 +681,6 @@ section img {
 
 footer {
   background-color: #3b3b3b;
-  margin-top: -35px;
 }
 
 .footercontent {
@@ -691,6 +707,11 @@ footer {
 .footercontent__wrapper li {
   margin-bottom: 10px;
 }
+@media screen and (min-width: 1200px) {
+  .footercontent__wrapper li {
+    font-size: 1.5rem;
+  }
+}
 .footercontent__wrapper a {
   color: white;
   text-decoration: none;
@@ -711,13 +732,18 @@ footer {
     text-align: center;
     margin-top: 3%;
     margin-bottom: 2%;
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-left: 0%;
   }
 }
 .footercontent__icon {
   font-size: 0.8rem;
   margin-right: 2%;
+}
+@media screen and (min-width: 1200px) {
+  .footercontent__icon {
+    font-size: 1.5rem;
+  }
 }
 .footercontent__icon--2 {
   font-size: 0.8rem;
@@ -803,16 +829,30 @@ footer {
     transform: rotate(1turn);
   }
 }
+.loader-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .spinner {
   opacity: 0;
   box-sizing: border-box;
-  position: absolute;
-  top: 50%;
-  left: 42%;
-  width: 80px;
-  height: 80px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  border: 6px solid #FF79DA;
+  border: 10px solid #FF79DA;
   border-top-color: #9356DC;
   animation: loader-container 1500ms ease-in-out;
 }
@@ -858,6 +898,12 @@ footer {
   color: black;
   transition-duration: 1s;
   -webkit-text-stroke: 0.05rem #fff;
+  cursor: pointer;
+}
+@media screen and (min-width: 700px) {
+  .heart--card {
+    font-size: 2.5rem;
+  }
 }
 
 .heart-full {
@@ -868,6 +914,11 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(0);
+}
+@media screen and (min-width: 700px) {
+  .heart-full {
+    font-size: 2.5rem;
+  }
 }
 
 @keyframes heart {
