@@ -4,6 +4,7 @@
     height: 45px;
     @include tablet-only {
         height: 40px;
+        
     }
 
 
@@ -33,7 +34,7 @@
     justify-content: center;
     background-color: $color-background-1;
     width: 100%;
-    box-shadow: 0 0 0.25rem 0.125rem #777777;
+    box-shadow: 0 5px 4px -5px #333 inset;
 
     /*---- box-shadow: box-shadow: 0 -5px 5px -5px #333; ---*/
     
@@ -125,14 +126,14 @@
     display: flex;
     align-items:center;
     justify-content: center;
-    height: 50px;
-    width: 100%;
+    height: 35px;
+    
     
     
 
     img {
-        height: 35px;
-        width: 200px;
+        height: 25px;
+        
     }
 
     .return { 
@@ -151,7 +152,7 @@
 
     .restaurant-list__title{
         h1 {
-            width: 70%;
+            width: 85%;
         }
     }
 

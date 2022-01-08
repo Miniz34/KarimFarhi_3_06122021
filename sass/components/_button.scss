@@ -4,8 +4,9 @@
 .btn {
     @include btn;
     height: 50px;
-    width: 250px;
+    width: 190px;
     margin-bottom: 10%;
+    font-size: 1rem;
     @include primary-box-shadow;
     transition: transform 1s;
     @include tablet-only {

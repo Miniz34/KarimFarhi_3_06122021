@@ -1,46 +1,34 @@
 
-.loader-container {
+  
+  
+  .spinner {
     
-    z-index: -1;
-}
-
-.loader-img {
-
-
-
-    width: 100%;
-    object-fit: cover;
-    
-   
-    
-
-
-
-}
-
-.loader2 {
-
     opacity: 0;
-    width: 30%;
-    height: 50%;
-    
+    box-sizing: border-box;
     position: absolute;
-    overflow: hidden;
- margin-top: 20%;
-  margin-left: 35%;
-  z-index: -1;
- 
+    top: 50%;
+    left: 42%;
+    width: 80px;
+    height: 80px;
+    
+    border-radius: 50%;
+    border: 6px solid $color-secondary;
+    border-top-color: $color-primary;
 
+    animation: loader-container 1500ms ease-in-out;
     
     
-animation: loader-container 2000ms ease-in-out;
+  }
 
-}
-
-#main_wrapper 
+  #main_wrapper 
 
 {
     animation: loader-main 4s;
     opacity: 1;
 }
 
+
+
+
+
+  
