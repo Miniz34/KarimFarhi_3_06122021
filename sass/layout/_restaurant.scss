@@ -159,6 +159,11 @@
         text-transform: uppercase;
         padding-bottom: 0px;
         border-bottom: 4px solid $color-tertiary;
+        height: 30px;
+
+        @include tablet-only {
+            height: 45px;
+        }
        
 
         h2 {

@@ -386,6 +386,11 @@ section img {
   transform: scale(1.02);
   box-shadow: 0.5px 0.5px 15px 0 #777777;
 }
+@media screen and (min-width: 700px) {
+  .restaurant__card {
+    height: 250px;
+  }
+}
 .restaurant__img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -433,6 +438,7 @@ section img {
 @media screen and (min-width: 700px) {
   .restaurant__text h3 {
     font-size: 18px;
+    margin-top: 8%;
   }
 }
 .restaurant__text p {
@@ -576,6 +582,12 @@ section img {
   text-transform: uppercase;
   padding-bottom: 0px;
   border-bottom: 4px solid #99E2D0;
+  height: 30px;
+}
+@media screen and (min-width: 700px) {
+  .restaurant-card__title {
+    height: 45px;
+  }
 }
 .restaurant-card__title h2 {
   font-weight: 400;
@@ -879,17 +891,17 @@ footer {
   margin-right: 10%;
 }
 .heart-container:hover {
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .heart-container:hover > .heart--card {
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .heart-container:hover > .heart--card + .heart-full {
-  animation: heart 600ms forwards cubic-bezier(0.95, 0.01, 1, 0.03);
+  animation: heart 400ms forwards cubic-bezier(0.95, 0.01, 1, 0.03);
 }
 
 .heart--card {

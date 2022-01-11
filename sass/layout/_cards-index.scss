@@ -94,6 +94,10 @@ section img {
         @include hover-cards;
         }
 
+        @include tablet-only {
+            height: 250px;
+        }
+
        
     }
 
@@ -160,6 +164,8 @@ section img {
             font-size: 1.3rem;
             @include tablet-only {
                 font-size: 18px;
+                margin-top: 8%;
+                
         }
         }
 
