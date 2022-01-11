@@ -22,6 +22,8 @@
                 & + .heart-full {
 
                 animation: heart 400ms forwards cubic-bezier(.95,.01,1,.03);
+                
+                
                 }
 }
     }
@@ -58,6 +60,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(0);
+  
+  
 
   @include tablet-only {
     font-size: 2.5rem;
@@ -84,4 +88,5 @@ top: 15px;
 right: 0px;
 font-size: 1.4rem;
 font-weight: 200;
+
 }
