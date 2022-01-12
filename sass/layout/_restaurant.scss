@@ -102,13 +102,15 @@ body {
 
 .restaurant-container {
 
-    @include tablet-only;
+   
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 10px;
 
+    @include tablet-only {
+    margin-left: 10px;
+    }
 
 
 

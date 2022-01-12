@@ -547,8 +547,13 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 10px;
 }
+@media screen and (min-width: 700px) {
+  .restaurant-container {
+    margin-left: 10px;
+  }
+}
+
 .restaurant-card {
   margin-left: 2%;
 }
