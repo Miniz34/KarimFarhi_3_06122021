@@ -7,11 +7,12 @@
     width: 190px;
     margin-bottom: 10%;
     font-size: 1rem;
-    @include primary-box-shadow;
+    
+    cursor: pointer;
     transition: transform 1s;
     @include tablet-only {
         margin-bottom: 2%;
-        cursor: pointer;
+        
     }
 
         &:hover {

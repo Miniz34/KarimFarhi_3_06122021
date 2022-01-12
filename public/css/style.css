@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   box-sizing: border-box;
   font-family: "roboto", "sans-serif";
@@ -73,6 +74,29 @@ header .restaurant__img--new p {
 .restaurant-list__title h1 {
   font-family: "Shrikhand", "sans-serif";
   font-weight: 500;
+}
+
+.footercontent__title {
+  font-family: "Shrikhand", "sans-serif";
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 700px) {
+  .footercontent__title {
+    font-size: 2rem;
+  }
+}
+
+.footercontent__icon {
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 1200px) {
+  .footercontent__icon {
+    font-size: 1.5rem;
+  }
+}
+.footercontent__icon--2 {
+  font-size: 0.8rem;
 }
 
 .mainlogo {
@@ -188,22 +212,22 @@ header .restaurant__img--new p {
   border-radius: 40px;
   border: 0px;
   font-size: 1rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0 #aaa;
   height: 50px;
   width: 190px;
   margin-bottom: 10%;
   font-size: 1rem;
-  box-shadow: 0.1rem 0.1rem 0.1rem 0 #aaa;
+  cursor: pointer;
   transition: transform 1s;
 }
 @media screen and (min-width: 700px) {
   .btn {
     margin-bottom: 2%;
-    cursor: pointer;
   }
 }
 .btn:hover:hover {
   transform: scale(0.9);
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff79da, #9356DC);
   /*background: linear-gradient(ligthen($color-secondary, 15), darken($color-primary, 15));*/
   z-index: 2;
   box-shadow: 0.1rem 0.1rem 0.1rem 0 #5e5e5e;
@@ -269,6 +293,7 @@ header .restaurant__img--new p {
   background-color: #cec2db;
   transform: scale(1.02);
   box-shadow: 0.5px 0.5px 15px 0 #777777;
+  /*-- Box shadow standard auquel est appliqué un darken --*/
 }
 .howto__link:hover .howto__logo {
   color: #9356DC;
@@ -378,6 +403,7 @@ section img {
 .restaurant__card:hover {
   transform: scale(1.02);
   box-shadow: 0.5px 0.5px 15px 0 #777777;
+  /*-- Box shadow standard auquel est appliqué un darken --*/
 }
 @media screen and (min-width: 700px) {
   .restaurant__card {
@@ -643,6 +669,7 @@ body {
 .restaurant-card__card:hover {
   transform: scale(1.02);
   box-shadow: 0.5px 0.5px 15px 0 #777777;
+  /*-- Box shadow standard auquel est appliqué un darken --*/
 }
 .restaurant-card__card:hover > .restaurant-card__card-maintext {
   width: 65%;
@@ -736,9 +763,6 @@ footer {
   text-decoration: underline;
 }
 .footercontent__title {
-  font-family: "Shrikhand", "sans-serif";
-  font-weight: 500;
-  font-size: 1.2rem;
   padding-top: 0%;
   margin-bottom: -5px;
   margin-left: 10%;
@@ -748,21 +772,13 @@ footer {
     text-align: center;
     margin-top: 3%;
     margin-bottom: 2%;
-    font-size: 2rem;
     margin-left: 0%;
   }
 }
 .footercontent__icon {
-  font-size: 0.8rem;
   margin-right: 2%;
 }
-@media screen and (min-width: 1200px) {
-  .footercontent__icon {
-    font-size: 1.5rem;
-  }
-}
 .footercontent__icon--2 {
-  font-size: 0.8rem;
   margin-right: 1%;
 }
 .footercontent p {
@@ -845,6 +861,14 @@ footer {
     transform: rotate(1turn);
   }
 }
+@keyframes heart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .loader-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -869,7 +893,7 @@ footer {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  border: 10px solid #FF79DA;
+  border: 10px solid #ff79da;
   border-top-color: #9356DC;
   animation: loader-container 1500ms ease-in-out;
 }
@@ -896,12 +920,12 @@ footer {
   margin-right: 10%;
 }
 .heart-container:hover {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff79da, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .heart-container:hover > .heart--card {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff79da, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -927,7 +951,7 @@ footer {
   position: relative;
   font-size: 1.5rem;
   opacity: 1;
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-linear-gradient(#ff79da, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(0);
@@ -938,14 +962,6 @@ footer {
   }
 }
 
-@keyframes heart {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 .heart-container-main {
   position: relative;
   top: 15px;

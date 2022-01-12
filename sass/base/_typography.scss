@@ -89,3 +89,35 @@ header{
         font-weight: 500;
     }
 }
+
+.footercontent__title {
+    font-family: 'Shrikhand', 'sans-serif';
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    @include tablet-only {
+        
+       
+        font-size: 2rem;
+        
+        
+        
+    }
+}
+
+.footercontent__icon {
+
+    font-size: 0.8rem;
+       
+
+        @include desktop-only {
+            font-size: 1.5rem;
+
+        }
+
+        &--2 {
+            font-size: 0.8rem;
+           
+        }
+
+}

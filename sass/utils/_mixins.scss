@@ -47,6 +47,7 @@
     border-radius: 40px;
     border: 0px;
     font-size: 1rem;
+    @include primary-box-shadow;
     
     
 }
@@ -95,7 +96,7 @@
 @mixin hover-cards {
 
     transform: scale(1.02);
-    @include btn-box-shadow;
+    @include btn-box-shadow;    /*-- Box shadow standard auquel est appliqué un darken --*/
 }
 
 @mixin hover-btn {
