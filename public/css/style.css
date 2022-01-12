@@ -458,6 +458,10 @@ section img {
   margin-top: 4px;
 }
 
+body {
+  margin: 0;
+}
+
 .main-img {
   width: 100%;
   height: 16rem;
@@ -550,6 +554,7 @@ section img {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: 5px;
 }
 .restaurant-card {
   margin-left: 2%;
@@ -582,11 +587,13 @@ section img {
   text-transform: uppercase;
   padding-bottom: 0px;
   border-bottom: 4px solid #99E2D0;
+  margin-left: 10px;
   height: 30px;
 }
 @media screen and (min-width: 700px) {
   .restaurant-card__title {
     height: 45px;
+    margin-left: 0px;
   }
 }
 .restaurant-card__title h2 {
