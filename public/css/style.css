@@ -76,21 +76,14 @@ header .restaurant__img--new p {
 }
 
 .mainlogo {
-  height: 45px;
-}
-@media screen and (min-width: 700px) {
-  .mainlogo {
-    height: 40px;
-  }
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mainlogo .mainlogo__img {
   height: 30px;
   width: 100%;
-}
-@media screen and (min-width: 700px) {
-  .mainlogo .mainlogo__img {
-    height: 35px;
-  }
 }
 
 .localisation {
