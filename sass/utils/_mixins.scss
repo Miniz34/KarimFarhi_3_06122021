@@ -1,11 +1,11 @@
 @mixin tablet-only {
-    @media screen and (min-width: map-get($breakpoints, tablet)){
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         @content;
     }
 }
 
 @mixin desktop-only {
-    @media screen and (min-width: map-get($breakpoints, desktop)){
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
         @content;
     }
 }
@@ -16,9 +16,10 @@
 
 
 @mixin primary-box-shadow($color: $box-shadow-color) {
- box-shadow: 0.1rem 0.1rem 0.1rem 0 $color;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0 $color;
 }
-@mixin secondary-box-shadow($color: $box-shadow-color){
+
+@mixin secondary-box-shadow($color: $box-shadow-color) {
     box-shadow: 0.15rem 0.15rem 15rem 0 $color;
 }
 
@@ -26,58 +27,61 @@
     box-shadow: 0.5px 0.5px 15px 0 darken($color, 20);
 }
 
-@mixin primary-border($color: $box-shadow-color){
-   
+@mixin primary-border($color: $box-shadow-color) {
+
     border-radius: 20px;
 }
 
-@mixin secondary-border{
+@mixin secondary-border {
     border-radius: 20px;
 }
 
-@mixin tertiary-border{
+@mixin tertiary-border {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 }
 
 
-@mixin btn($color: linear-gradient($color-secondary,$color-primary)){
+@mixin btn($color: linear-gradient($color-secondary, $color-primary)) {
     color: white;
     background: linear-gradient(darken($color-secondary, 8), darken($color-primary, 8));
     border-radius: 40px;
     border: 0px;
     font-size: 1rem;
     @include primary-box-shadow;
-    
-    
+
+
 }
 
-@function lightness-shift($colour){
-   @if(lightness($colour) <50%){
-        @return ligthen($colour, 20%) }@else{
-            @return darken($colour, 40%)
-        }
+@function lightness-shift($colour) {
+    @if(lightness($colour) <50%) {
+        @return ligthen($colour, 20%)
     }
 
-    @mixin lightness($colour: lightness-shift($color-tertiary)){
-        color: $colour;
-   }
+    @else {
+        @return darken($colour, 40%)
+    }
+}
 
-   @mixin secondary-margin{
-       margin: 2% 0 0 0;
-   }
+@mixin lightness($colour: lightness-shift($color-tertiary)) {
+    color: $colour;
+}
 
-@mixin font-cards{
+@mixin secondary-margin {
+    margin: 2% 0 0 0;
+}
+
+@mixin font-cards {
     font-size: 1.4rem;
     font-weight: 700;
 }
 
-@mixin font-howto{
+@mixin font-howto {
     font-weight: 550;
     font-size: 1rem;
 }
 
-@mixin font-title{
+@mixin font-title {
     font-weight: 700;
     font-size: 1.6rem;
 }
@@ -88,7 +92,7 @@
 }
 
 
-@mixin return{
+@mixin return {
     color: #000;
     font-size: 1.2rem;
 }
@@ -96,26 +100,26 @@
 @mixin hover-cards {
 
     transform: scale(1.02);
-    @include btn-box-shadow;    /*-- Box shadow standard auquel est appliqué un darken --*/
+    @include btn-box-shadow;
+    /*-- Box shadow standard auquel est appliqué un darken --*/
 }
 
 @mixin hover-btn {
     &:hover {
 
-        
+
         transform: scale(0.90);
-        
-        background: linear-gradient($color-secondary,$color-primary);
+
+        background: linear-gradient($color-secondary, $color-primary);
         /*background: linear-gradient(ligthen($color-secondary, 15), darken($color-primary, 15));*/
         z-index: 2;
 
-            @include primary-box-shadow(darken($box-shadow-color, 30%))
-            
+        @include primary-box-shadow(darken($box-shadow-color, 30%))
     }
 }
 
 @mixin ellipsis {
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }

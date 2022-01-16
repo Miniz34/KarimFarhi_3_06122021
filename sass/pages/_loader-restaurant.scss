@@ -1,11 +1,9 @@
-.loader-restaurant 
+.loader-restaurant {
+    animation: menu 1s 150ms cubic-bezier(.04, .9, .68, 1.02) both;
 
-{
-    animation: menu 1s 150ms cubic-bezier(.04,.9,.68,1.02) both;
     @for $i from 1 through 3 {
         &--#{$i} {
             animation-delay: 1s * $i;
-         }
+        }
     }
 }
-

@@ -14,22 +14,23 @@
     0% {
         opacity: 1;
         transform: rotate(0deg);
-        
+
     }
 
-	70% {
-		opacity: 1;
-        
-	}
-	100% {
-		opacity: 0;
+    70% {
+        opacity: 1;
+
+    }
+
+    100% {
+        opacity: 0;
         transform: rotate(2turn);
-        
-        
-       
-        
-        
-	}
+
+
+
+
+
+    }
 }
 
 
@@ -40,17 +41,13 @@
 
 
 
-@keyframes btn
-
-{
-    0%{
+@keyframes btn {
+    0% {
         box-shadow: 0px 0px 4px 4px black;
         transform: scale(1)
-
-   
-
     }
-    100%{
+
+    100% {
         box-shadow: 0px 0px 4px 4px black;
         transform: scale(1.25);
 
@@ -69,7 +66,7 @@
 
 
 @keyframes menu {
-    0%{
+    0% {
         transform: translateY(150px);
         opacity: 0;
     }
@@ -93,7 +90,7 @@
 
     100% {
         transform: translateY(0);
-    } 
+    }
 
 
 }
@@ -115,12 +112,12 @@
 @keyframes rotate-check {
     0% {
         transform: rotate(0deg);
-        
+
     }
 
     100% {
         transform: rotate(1turn);
-        
+
     }
 }
 
@@ -131,6 +128,7 @@
     0% {
         transform: scale(0);
     }
+
     100% {
         transform: scale(1);
     }

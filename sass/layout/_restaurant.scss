@@ -63,18 +63,19 @@ body {
 
     @include tablet-only {
         padding-top: 2%;
-       
+
     }
 
 
     h1 {
         margin-left: 5%;
-        
+
         font-size: 1.5rem;
-    @include tablet-only {
-        font-size: 2.5rem;
-        margin-left: 2%;
-    }
+
+        @include tablet-only {
+            font-size: 2.5rem;
+            margin-left: 2%;
+        }
 
     }
 
@@ -96,20 +97,20 @@ body {
 
     @include desktop-only {
         width: 33%;
-        
+
     }
 }
 
 .restaurant-container {
 
-   
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 
     @include tablet-only {
-    margin-left: 10px;
+        margin-left: 10px;
     }
 
 
@@ -136,7 +137,7 @@ body {
 
     }
 
-    
+
 
 
 
@@ -144,7 +145,7 @@ body {
 
         justify-content: center;
         width: 100%;
-        
+
 
         @include tablet-only {
             display: flex;
@@ -152,7 +153,7 @@ body {
             flex-wrap: wrap;
             justify-content: center;
             width: 100%;
-            
+
         }
 
 
@@ -173,7 +174,7 @@ body {
             height: 45px;
             margin-left: 0px;
         }
-       
+
 
         h2 {
             font-weight: 400;
@@ -185,9 +186,9 @@ body {
 }
 
 .restaurant-card__card {
-    
 
-    
+
+
 
     @include primary-box-shadow;
     background-color: $color-white;
@@ -210,22 +211,22 @@ body {
         position: absolute;
         right: 0px;
 
-        
-        
-        
-        
+
+
+
+
 
         &-price {
-            
-            
+
+
             margin-top: 36px;
             font-weight: 700;
-            
+
             transform: translateX(30px);
             transition-duration: 1s;
             transition-delay: 50ms;
-            
-            
+
+
         }
 
         &-active {
@@ -236,8 +237,8 @@ body {
             transform: translateX(50px);
             transition-duration: 1s;
             transition-delay: 50ms;
-            
-            
+
+
 
 
         }
@@ -258,11 +259,12 @@ body {
         &>.restaurant-card__card-maintext {
 
             width: 65%;
+
             &>.restaurant-card__card--title {
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
-            
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+
             }
         }
 
@@ -305,21 +307,21 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+
         width: 98%;
         margin-left: 3%;
-        
-        transition-duration: 1s;
-        
 
-       
+        transition-duration: 1s;
+
+
+
     }
 
 
     &--title {
-        
+
         font-weight: 700;
-        
+
         font-size: 1.1rem;
         @include ellipsis;
     }
@@ -331,7 +333,7 @@ body {
         @include ellipsis;
         font-size: 1rem;
         width: 80%;
-        
+
     }
 
 

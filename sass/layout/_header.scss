@@ -1,34 +1,25 @@
-
-.mainlogo 
-{
+.mainlogo {
     height: 60px;
     display: flex;
-        justify-content: center;
-        align-items: center;
-    @include tablet-only {
-        
-        
-        
+    justify-content: center;
+    align-items: center;
+
+    @include tablet-only {}
+
+
+    .mainlogo__img {
+        height: 30px;
+        width: 100%;
+
+
     }
 
-
-    .mainlogo__img
-
-    {
-    height: 30px;
-    width: 100%;
-    
-   
-    }
-    
 
 
 }
 
 
-.localisation 
-
-{
+.localisation {
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -39,26 +30,26 @@
     box-shadow: 0 5px 4px -5px #333 inset;
 
     /*---- box-shadow: box-shadow: 0 -5px 5px -5px #333; ---*/
-    
-    
 
-    &__marker
 
-    {
+
+    &__marker {
         font-size: 8px;
         padding: 10px;
-        
+
     }
+
     &__city {
 
         margin-left: 8px;
+
         @include tablet-only {
             font-size: 1.2rem;
         }
     }
 
 
-    
+
 }
 
 .header-wrapper {
@@ -67,11 +58,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     h1 {
-        
-         margin-left: 4%;
+
+        margin-left: 4%;
         margin-top: 6%;
-        @include tablet-only{
+
+        @include tablet-only {
             margin-top: 1%;
             margin-left: 0%;
             margin-bottom: 0%;
@@ -80,19 +73,18 @@
 
 }
 
-.headercontent 
+.headercontent {
 
-{
-    
     width: 80%;
     text-align: center;
     padding-bottom: 20px;
+
     @include tablet-only {
         display: flex;
         flex-direction: column;
         margin-top: 0px;
-        
-        
+
+
     }
 
     &__title {
@@ -102,7 +94,7 @@
     &__text {
         font-weight: 300;
     }
-    
+
 }
 
 
@@ -122,51 +114,47 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    @include tablet-only {
-        
-    }
-    
+
+    @include tablet-only {}
+
 }
 
 .mainlogo-restaurant {
 
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     height: 60px;
-    
-    
-    
+
+
+
 
     img {
         height: 30px;
-        
+
     }
 
-    .return { 
+    .return {
         position: absolute;
         left: 7%;
-      
-        
+
+
     }
-    
+
 }
 
 
-    
 
-    
 
-    .restaurant-list__title{
-        h1 {
-            width: 85%;
-        }
+
+
+.restaurant-list__title {
+    h1 {
+        width: 85%;
     }
+}
 
-    
+
 .localisation {
     display: flex;
 }
-
-
-

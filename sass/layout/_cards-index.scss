@@ -6,6 +6,7 @@
         width: 100%;
 
     }
+
     @include tablet-only {
         flex-wrap: wrap;
         width: 100%;
@@ -14,8 +15,8 @@
 
     @include desktop-only {
         display: flex;
-       
-        
+
+
 
     }
 
@@ -27,21 +28,22 @@ section img {
     object-fit: cover;
     height: 13.5rem;
     width: 100%;
-    @include tablet-only{
+
+    @include tablet-only {
         height: 11.5rem;
     }
 
-    
+
 
 
 
 }
 
 .restaurant__card-wrapper {
-    @include tablet-only{
+    @include tablet-only {
         width: 48%;
-        
-        
+
+
     }
 
     @include desktop-only {
@@ -61,7 +63,8 @@ section img {
 
     &__main-title {
         margin-bottom: 8%;
-        @include tablet-only{
+
+        @include tablet-only {
             margin-left: 1%;
             text-align: center;
         }
@@ -74,8 +77,8 @@ section img {
     &-wrapper {
         width: 90%;
         padding-top: 30px;
-            
-        
+
+
 
     }
 
@@ -91,14 +94,14 @@ section img {
         transition: transform 1s;
 
         &:hover {
-        @include hover-cards;
+            @include hover-cards;
         }
 
         @include tablet-only {
             height: 250px;
         }
 
-       
+
     }
 
     &__img {
@@ -119,18 +122,20 @@ section img {
             background-color: $color-tertiary;
             width: 90px;
             height: 30px;
-            
-            &--off{
+
+
+            &--off {
                 opacity: 0;
-                
+
             }
-             p {
-                 margin: auto;
-                 font-weight: 500;
-                 font-size: 1.1rem;
-                 
-             }
-            
+
+            p {
+                margin: auto;
+                font-weight: 500;
+                font-size: 1.1rem;
+
+            }
+
         }
 
 
@@ -151,7 +156,7 @@ section img {
         right: 25px;
         font-size: 1.4rem;
         font-weight: 200;
-        
+
 
     }
 
@@ -162,21 +167,23 @@ section img {
         h3 {
             margin-top: 8px;
             font-size: 1.3rem;
+
             @include tablet-only {
                 font-size: 18px;
                 margin-top: 8%;
-                
-        }
+
+            }
         }
 
         p {
             margin-top: -20px;
             font-size: 1.1rem;
+
             @include tablet-only {
                 font-size: 14px;
                 margin-top: -15px;
+            }
         }
-    }
 
     }
 

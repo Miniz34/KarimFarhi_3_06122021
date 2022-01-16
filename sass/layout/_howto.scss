@@ -5,12 +5,12 @@
 
     &__main-title {
 
-       @include tablet-only {
+        @include tablet-only {
             text-align: center;
             margin-top: 5%;
             margin-bottom: 2%;
         }
-    }    
+    }
 
     &__container {
         width: 90%;
@@ -21,26 +21,26 @@
         @include tablet-only {
             display: flex;
             justify-content: space-around;
-    
-                
-                flex-direction: row;
-                align-items: center;
-                height: 90px;
-                width: 100%;
-                
-                
-            
-        
+
+
+            flex-direction: row;
+            align-items: center;
+            height: 90px;
+            width: 100%;
+
+
+
+
         }
-    
+
     }
 
 
-.howto__cards-wrapper {
-    @include tablet-only {
-        width: 30%;
+    .howto__cards-wrapper {
+        @include tablet-only {
+            width: 30%;
+        }
     }
-}
 
 }
 
@@ -55,28 +55,28 @@
     margin-bottom: 10%;
     height: 80px;
     padding-left: 50px;
-    
+
     @include primary-box-shadow;
     @include primary-border;
-    
-  
-
-   
 
 
-    
+
+
+
+
+
 
     &:hover {
         background-color: #cec2db;
         @include hover-cards;
-        
+
 
         .howto__logo {
             color: $color-primary;
         }
     }
 
-   
+
 }
 
 
