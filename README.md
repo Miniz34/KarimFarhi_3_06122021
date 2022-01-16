@@ -32,7 +32,7 @@ Mon rôle a été de réaliser le site en intégrant les maquettes mobiles en HT
   - Turquoise : ![#99e2d0](https://via.placeholder.com/15/99e2d0/000000?text=+) `#99e2d0`
 - Police : _[Shrikhand](https://fonts.google.com/specimen/Shrikhand)_ pour le logo et les titres et _[Roboto](https://fonts.google.com/specimen/Roboto)_ pour le texte
 - **Pas de framework ou de JavaScript** : uniquement du HTML et CSS (SASS serait un plus) et le HTML ne doit contenir aucun attribut style
-- Le code ne doit contenir aucune erreur ni alerte au validateur W3C [HTML Accueil](https://validator.w3.org/nu/?doc=https%3A%2F%2Fminiz34.github.io%2FOhMyFoodP3%2F), [HTML Page Menu](https://validator.w3.org/nu/?doc=https%3A%2F%2Fminiz34.github.io%2FOhMyFoodP3%2Fdelice_sens.html) et [CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fminiz34.github.io%2FOhMyFoodP3%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr)
+- Le code ne doit contenir aucune erreur ni alerte au validateur W3C [HTML Accueil](https://validator.w3.org/nu/?doc=https%3A%2F%2Fminiz34.github.io%2FKarimFarhi_3_06122021%2F), [HTML Page Menu](https://validator.w3.org/nu/?doc=https%3A%2F%2Fminiz34.github.io%2FKarimFarhi_3_06122021%2Fpalette_gout.html) et [CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fminiz34.github.io%2FKarimFarhi_3_06122021%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr)
 - Le site doit être compatible avec les dernières versions de Chrome, Firefox et Safari
 
 #### Fonctionnalités, effets graphiques et animations :
