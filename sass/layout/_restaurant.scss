@@ -1,345 +1,236 @@
 body {
-    margin: 0;
+  margin: 0;
 }
-
-
-
 
 .main-img {
-    width: 100%;
-    height: 16rem;
-    object-fit: cover;
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
 
-    @include tablet-only {
-        height: 18rem;
-    }
+  @include tablet-only {
+    height: 18rem;
+  }
 }
-
 
 .return {
-    @include return;
+  @include return;
 }
-
 
 .wrapper-restaurant {
-    background-color: $color-background-solid;
+  background-color: $color-background-solid;
 
-    @include tablet-only {
-        width: 80%;
-        margin: auto;
-    }
-
+  @include tablet-only {
+    width: 80%;
+    margin: auto;
+  }
 }
-
 
 .restaurant__icon {
-
-
-    font-size: 2.2rem;
-    margin-right: 4%;
-
-
-
-
-
-
+  font-size: 2.2rem;
+  margin-right: 4%;
 }
-
 
 .restaurant-list__title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: $color-background-solid;
+  position: relative;
+  bottom: 100px;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  margin-bottom: -120px;
+  @include tertiary-border;
+  margin-top: 10%;
+  align-items: center;
 
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: $color-background-solid;
-    position: relative;
-    bottom: 100px;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    margin-bottom: -120px;
-    @include tertiary-border;
-    margin-top: 10%;
-    align-items: center;
+  @include tablet-only {
+    padding-top: 2%;
+  }
 
-    @include tablet-only {
-        padding-top: 2%;
-
-    }
-
-
-    h1 {
-        margin-left: 5%;
-
-        font-size: 1.5rem;
-
-        @include tablet-only {
-            font-size: 2.5rem;
-            margin-left: 2%;
-        }
-
-    }
+  h1 {
+    margin-left: 5%;
+    font-size: 1.5rem;
 
     @include tablet-only {
-        margin-top: 60px;
+      font-size: 2.5rem;
+      margin-left: 2%;
     }
+  }
 
+  @include tablet-only {
+    margin-top: 60px;
+  }
 }
-
 
 .entrees,
 .plats,
 .desserts {
-    width: 100%;
+  width: 100%;
 
-    @include tablet-only {
-        width: 50%;
-    }
+  @include tablet-only {
+    width: 50%;
+  }
 
-    @include desktop-only {
-        width: 33%;
-
-    }
+  @include desktop-only {
+    width: 33%;
+  }
 }
 
 .restaurant-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    @include tablet-only {
-        margin-left: 10px;
-    }
-
-
-
-
-
+  @include tablet-only {
+    margin-left: 10px;
+  }
 }
 
 .restaurant-card {
+  margin-left: 2%;
 
+  @include tablet-only {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0%;
+  }
 
-    margin-left: 2%;
-
-
+  &__wrapper {
+    justify-content: center;
+    width: 100%;
 
     @include tablet-only {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0%;
-
-
-
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
 
     }
+  }
 
+  &__title {
+    font-size: 0.8rem;
+    margin-bottom: 4%;
+    width: 60px;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+    border-bottom: 4px solid $color-tertiary;
+    margin-left: 10px;
+    height: 30px;
 
-
-
-
-    &__wrapper {
-
-        justify-content: center;
-        width: 100%;
-
-
-        @include tablet-only {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            width: 100%;
-
-        }
-
-
-
+    @include tablet-only {
+      height: 45px;
+      margin-left: 0px;
     }
 
-    &__title {
-        font-size: 0.8rem;
-        margin-bottom: 4%;
-        width: 60px;
-        text-transform: uppercase;
-        padding-bottom: 0px;
-        border-bottom: 4px solid $color-tertiary;
-        margin-left: 10px;
-        height: 30px;
-
-        @include tablet-only {
-            height: 45px;
-            margin-left: 0px;
-        }
-
-
-        h2 {
-            font-weight: 400;
-        }
-
-
+    h2 {
+      font-weight: 400;
     }
-
+  }
 }
 
 .restaurant-card__card {
+  @include primary-box-shadow;
+  background-color: $color-white;
+  width: 98%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @include secondary-border;
+  margin-bottom: 4%;
+  height: 65px;
 
-
-
-
-    @include primary-box-shadow;
-    background-color: $color-white;
-    width: 98%;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
+  &--check {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    @include secondary-border;
-    margin-bottom: 4%;
-    height: 65px;
+    position: absolute;
+    right: 0px;
 
-
-
-    &--check {
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        right: 0px;
-
-
-
-
-
-
-        &-price {
-
-
-            margin-top: 36px;
-            font-weight: 700;
-
-            transform: translateX(30px);
-            transition-duration: 1s;
-            transition-delay: 50ms;
-
-
-        }
-
-        &-active {
-            background-color: $color-tertiary;
-            height: 65px;
-            width: 50px;
-            position: relative;
-            transform: translateX(50px);
-            transition-duration: 1s;
-            transition-delay: 50ms;
-
-
-
-
-        }
-
-        &-active2 {
-            color: white;
-            margin-top: 20px;
-            margin-left: 13px;
-            font-size: 1.4rem;
-
-        }
+    &-price {
+      margin-top: 36px;
+      font-weight: 700;
+      transform: translateX(30px);
+      transition-duration: 1s;
+      transition-delay: 50ms;
     }
 
-    &:hover {
-        @include hover-cards;
+    &-active {
+      background-color: $color-tertiary;
+      height: 65px;
+      width: 50px;
+      position: relative;
+      transform: translateX(50px);
+      transition-duration: 1s;
+      transition-delay: 50ms;
+    }
 
+    &-active2 {
+      color: white;
+      margin-top: 20px;
+      margin-left: 13px;
+      font-size: 1.4rem;
+    }
+  }
 
-        &>.restaurant-card__card-maintext {
+  &:hover {
+    @include hover-cards;
 
-            width: 65%;
+    &>.restaurant-card__card-maintext {
+      width: 65%;
 
-            &>.restaurant-card__card--title {
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
+      &>.restaurant-card__card--title {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
 
-            }
+    &>.restaurant-card__card--check {
+      &>.restaurant-card__card--check-price {
+        transform: translateX(-20px);
+      }
+
+      &>.restaurant-card__card--check-active {
+        transform: translateX(0);
+
+        &>.restaurant-card__card--check-active2 {
+          transform: rotate(1turn);
         }
-
-        &>.restaurant-card__card--check {
-
-            &>.restaurant-card__card--check-price {
-                transform: translateX(-20px);
-            }
-
-
-
-
-            &>.restaurant-card__card--check-active {
-
-                transform: translateX(0);
-
-
-
-
-
-                &>.restaurant-card__card--check-active2 {
-                    transform: rotate(1turn);
-
-                }
-
-
-
-
-
-
-
-            }
-
-        }
-
+      }
     }
+  }
 
-    &-maintext {
+  &-maintext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 98%;
+    margin-left: 3%;
+    transition-duration: 1s;
+  }
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+  &--title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    @include ellipsis;
+  }
 
-        width: 98%;
-        margin-left: 3%;
-
-        transition-duration: 1s;
-
-
-
-    }
-
-
-    &--title {
-
-        font-weight: 700;
-
-        font-size: 1.1rem;
-        @include ellipsis;
-    }
-
-    &--text {
-
-        padding-bottom: 5px;
-        margin-top: 2%;
-        @include ellipsis;
-        font-size: 1rem;
-        width: 80%;
-
-    }
-
-
-
+  &--text {
+    padding-bottom: 5px;
+    margin-top: 2%;
+    @include ellipsis;
+    font-size: 1rem;
+    width: 80%;
+  }
 }
 
 .restaurant-card__card--check-active2 {
-    transition-duration: 1s;
+  transition-duration: 1s;
 }

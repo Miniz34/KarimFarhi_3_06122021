@@ -1,135 +1,106 @@
 /* <= Animation de rotation du loader */
 @keyframes loader-main {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes loader-container {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
 
-    0% {
-        opacity: 1;
-        transform: rotate(0deg);
+  }
 
-    }
+  70% {
+    opacity: 1;
 
-    70% {
-        opacity: 1;
+  }
 
-    }
-
-    100% {
-        opacity: 0;
-        transform: rotate(2turn);
-
-
-
-
-
-    }
+  100% {
+    opacity: 0;
+    transform: rotate(2turn);
+  }
 }
-
-
-
-
-
-
-
-
 
 @keyframes btn {
-    0% {
-        box-shadow: 0px 0px 4px 4px black;
-        transform: scale(1)
-    }
+  0% {
+    box-shadow: 0px 0px 4px 4px black;
+    transform: scale(1)
+  }
 
-    100% {
-        box-shadow: 0px 0px 4px 4px black;
-        transform: scale(1.25);
+  100% {
+    box-shadow: 0px 0px 4px 4px black;
+    transform: scale(1.25);
 
-    }
+  }
 }
 
-
-
-
 /* //////////////////RESTAURANT //////////////////////////*/
 /* //////////////////RESTAURANT //////////////////////////*/
 /* //////////////////RESTAURANT //////////////////////////*/
-
-
 /* Animation d'apparition des parties des menus => */
-
-
 @keyframes menu {
-    0% {
-        transform: translateY(150px);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(150px);
+    opacity: 0;
+  }
 
-    20% {
-        opacity: 0.2;
-    }
+  20% {
+    opacity: 0.2;
+  }
 
-    40% {
-        opacity: 0.4;
+  40% {
+    opacity: 0.4;
 
-    }
+  }
 
-    60% {
-        opacity: 0.6;
-    }
+  60% {
+    opacity: 0.6;
+  }
 
-    80% {
-        opacity: 0.8;
-    }
+  80% {
+    opacity: 0.8;
+  }
 
-    100% {
-        transform: translateY(0);
-    }
-
-
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* V validation menu => */
-
 @keyframes validation {
-    0% {
-        transform: rotate(0deg);
-        transform: translateX(0);
-    }
+  0% {
+    transform: rotate(0deg);
+    transform: translateX(0);
+  }
 
-    100% {
-        transform: rotate(1turn);
-        transform: translateX(-58px);
-    }
+  100% {
+    transform: rotate(1turn);
+    transform: translateX(-58px);
+  }
 }
 
 @keyframes rotate-check {
-    0% {
-        transform: rotate(0deg);
+  0% {
+    transform: rotate(0deg);
+  }
 
-    }
-
-    100% {
-        transform: rotate(1turn);
-
-    }
+  100% {
+    transform: rotate(1turn);
+  }
 }
 
-
-
-
 @keyframes heart {
-    0% {
-        transform: scale(0);
-    }
+  0% {
+    transform: scale(0);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }

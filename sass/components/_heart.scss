@@ -1,84 +1,54 @@
 .heart-container {
+  margin-right: 10%;
 
+  &:hover {
+    background: linear-gradient($color-secondary, $color-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-    margin-right: 10%;
+    &>.heart--card {
+      background: linear-gradient($color-secondary, $color-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 
-
-    &:hover {
-
-        background: linear-gradient($color-secondary, $color-primary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-
-
-        &>.heart--card {
-            background: linear-gradient($color-secondary, $color-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-
-
-            &+.heart-full {
-
-                animation: heart 400ms forwards cubic-bezier(.95, .01, 1, .03);
-
-
-            }
-        }
+      &+.heart-full {
+        animation: heart 400ms forwards cubic-bezier(.95, .01, 1, .03);
+      }
     }
-
+  }
 }
 
-
-
 .heart--card {
+  position: absolute;
+  font-size: 1.5rem;
+  color: black;
+  transition-duration: 1s;
+  -webkit-text-stroke: 0.05rem #fff;
+  cursor: pointer;
 
-    position: absolute;
-    font-size: 1.5rem;
-    color: black;
-    transition-duration: 1s;
-    -webkit-text-stroke: 0.05rem #fff;
-
-
-    cursor: pointer;
-
-    @include tablet-only {
-        font-size: 2.5rem;
-
-    }
-
-
-
+  @include tablet-only {
+    font-size: 2.5rem;
+  }
 }
 
 .heart-full {
-    position: relative;
-    font-size: 1.5rem;
-    opacity: 1;
-    background: -webkit-linear-gradient($color-secondary, $color-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: scale(0);
+  position: relative;
+  font-size: 1.5rem;
+  opacity: 1;
+  background: -webkit-linear-gradient($color-secondary, $color-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(0);
 
-
-
-    @include tablet-only {
-        font-size: 2.5rem;
-    }
-
-
+  @include tablet-only {
+    font-size: 2.5rem;
+  }
 }
 
-
-
-
-
-
 .heart-container-main {
-    position: relative;
-    top: 15px;
-    right: 0px;
-    font-size: 1.4rem;
-    font-weight: 200;
-
+  position: relative;
+  top: 15px;
+  right: 0px;
+  font-size: 1.4rem;
+  font-weight: 200;
 }

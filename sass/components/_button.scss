@@ -1,48 +1,32 @@
 .btn {
-    @include btn;
-    height: 50px;
-    width: 190px;
-    margin-bottom: 10%;
-    font-size: 1rem;
+  @include btn;
+  height: 50px;
+  width: 190px;
+  margin-bottom: 10%;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 1s;
 
-    cursor: pointer;
-    transition: transform 1s;
+  @include tablet-only {
+    margin-bottom: 2%;
 
-    @include tablet-only {
-        margin-bottom: 2%;
+  }
 
-    }
+  &:hover {
+    @include hover-btn;
 
-    &:hover {
-        @include hover-btn;
-
-    }
-
-
-
+  }
 }
 
-
-
-
-
-
-
-
 .btn-restaurant {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 10%;
-    margin-top: 2%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10%;
+  margin-top: 2%;
 
-    @include tablet-only {
-        padding-bottom: 5%;
-    }
-
-
-
-
-
+  @include tablet-only {
+    padding-bottom: 5%;
+  }
 }

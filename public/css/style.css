@@ -244,7 +244,6 @@ header .restaurant__img--new p {
 .btn:hover:hover {
   transform: scale(0.9);
   background: linear-gradient(#ff79da, #9356DC);
-  /*background: linear-gradient(ligthen($color-secondary, 15), darken($color-primary, 15));*/
   z-index: 2;
   box-shadow: 0.1rem 0.1rem 0.1rem 0 #5e5e5e;
 }

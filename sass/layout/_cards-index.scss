@@ -1,209 +1,167 @@
-
 .restaurant__cards-wrapper {
-    @include tablet-only {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        width: 100%;
+  @include tablet-only {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
 
-    }
+  }
 
-    @include tablet-only {
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: space-between;
-    }
+  @include tablet-only {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
 
-    @include desktop-only {
-        display: flex;
+  @include desktop-only {
+    display: flex;
 
 
 
-    }
+  }
 
 }
 
 
 section img {
 
-    object-fit: cover;
-    height: 13.5rem;
-    width: 100%;
+  object-fit: cover;
+  height: 13.5rem;
+  width: 100%;
 
-    @include tablet-only {
-        height: 11.5rem;
-    }
-
-
-
+  @include tablet-only {
+    height: 11.5rem;
+  }
 
 
 }
 
 .restaurant__card-wrapper {
-    @include tablet-only {
-        width: 48%;
+  @include tablet-only {
+    width: 48%;
 
 
-    }
+  }
 
-    @include desktop-only {
-        width: 24%;
-    }
+  @include desktop-only {
+    width: 24%;
+  }
 }
 
 
 .restaurant {
-    background-color: $color-background-2;
+  background-color: $color-background-2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+
+
+  &__main-title {
+    margin-bottom: 8%;
+
+    @include tablet-only {
+      margin-left: 1%;
+      text-align: center;
+    }
+  }
+
+  &-wrapper {
+    width: 90%;
+    padding-top: 30px;
+  }
+
+  &__card {
     width: 100%;
+    background-color: $color-white;
+    margin-bottom: 10%;
+    height: 275px;
+    @include primary-box-shadow;
+    @include secondary-border;
+    transition: transform 1s;
+
+    &:hover {
+      @include hover-cards;
+    }
+
+    @include tablet-only {
+      height: 250px;
+    }
+  }
+
+  &__img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: -29px;
+
+    &--new {
+      display: flex;
+      text-align: center;
+      position: relative;
+      margin-left: auto;
+      margin-right: 10%;
+      margin-bottom: -5%;
+      background-color: $color-tertiary;
+      width: 90px;
+      height: 30px;
+
+      &--off {
+        opacity: 0;
+      }
+
+      p {
+        margin: auto;
+        font-weight: 500;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  &__content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5rem;
+  }
 
+  &__icon-main {
+    position: relative;
+    top: 30px;
+    right: 25px;
+    font-size: 1.4rem;
+    font-weight: 200;
+  }
 
-    &__main-title {
-        margin-bottom: 8%;
+  &__text {
+    margin-left: 20px;
 
-        @include tablet-only {
-            margin-left: 1%;
-            text-align: center;
-        }
+    h3 {
+      margin-top: 8px;
+      font-size: 1.3rem;
+
+      @include tablet-only {
+        font-size: 18px;
+        margin-top: 8%;
+      }
     }
 
+    p {
+      margin-top: -20px;
+      font-size: 1.1rem;
 
-
-
-
-    &-wrapper {
-        width: 90%;
-        padding-top: 30px;
-
-
-
+      @include tablet-only {
+        font-size: 14px;
+        margin-top: -15px;
+      }
     }
-
-
-    &__card {
-        width: 100%;
-        background-color: $color-white;
-        margin-bottom: 10%;
-        height: 275px;
-
-        @include primary-box-shadow;
-        @include secondary-border;
-        transition: transform 1s;
-
-        &:hover {
-            @include hover-cards;
-        }
-
-        @include tablet-only {
-            height: 250px;
-        }
-
-
-    }
-
-    &__img {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        margin-top: -29px;
-
-
-
-        &--new {
-
-            display: flex;
-            text-align: center;
-            position: relative;
-            margin-left: auto;
-            margin-right: 10%;
-            margin-bottom: -5%;
-            background-color: $color-tertiary;
-            width: 90px;
-            height: 30px;
-
-
-            &--off {
-                opacity: 0;
-
-            }
-
-            p {
-                margin: auto;
-                font-weight: 500;
-                font-size: 1.1rem;
-
-            }
-
-        }
-
-
-    }
-
-
-
-    &__content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        height: 5rem;
-    }
-
-    &__icon-main {
-        position: relative;
-        top: 30px;
-        right: 25px;
-        font-size: 1.4rem;
-        font-weight: 200;
-
-
-    }
-
-    &__text {
-
-        margin-left: 20px;
-
-        h3 {
-            margin-top: 8px;
-            font-size: 1.3rem;
-
-            @include tablet-only {
-                font-size: 18px;
-                margin-top: 8%;
-
-            }
-        }
-
-        p {
-            margin-top: -20px;
-            font-size: 1.1rem;
-
-            @include tablet-only {
-                font-size: 14px;
-                margin-top: -15px;
-            }
-        }
-
-    }
-
-
+  }
 }
 
 .restaurant__img--new {
-
-
-
-    p {
-        color: $color-tertiary;
-        @include lightness;
-        margin-top: 4px;
-
-
-    }
-
-
-
-
+  p {
+    color: $color-tertiary;
+    @include lightness;
+    margin-top: 4px;
+  }
 }
