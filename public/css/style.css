@@ -4,6 +4,16 @@ body {
   font-family: "roboto", "sans-serif";
 }
 
+#main_wrapper {
+  max-width: 1400px;
+  margin: auto;
+}
+
+#menu-wrapper {
+  max-width: 1400px;
+  margin: auto;
+}
+
 section img {
   object-fit: cover;
 }
@@ -194,8 +204,14 @@ header .restaurant__img--new p {
   height: 30px;
 }
 .mainlogo-restaurant .return {
-  position: absolute;
-  left: 7%;
+  position: relative;
+  right: 20%;
+}
+@media screen and (min-width: 700px) {
+  .mainlogo-restaurant .return {
+    position: relative;
+    right: 30%;
+  }
 }
 
 .restaurant-list__title h1 {
@@ -325,14 +341,6 @@ header .restaurant__img--new p {
   margin-right: 25px;
   font-size: 1.3rem;
   color: rgba(87, 87, 87, 0.479);
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
 }
 
 @media screen and (min-width: 700px) {

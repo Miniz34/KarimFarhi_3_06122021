@@ -135,9 +135,12 @@
     }
 
     .return {
-        position: absolute;
-        left: 7%;
-
+        position: relative;
+        right: 20%;
+        @include tablet-only {
+          position: relative;
+          right: 30%;
+        }
 
     }
 

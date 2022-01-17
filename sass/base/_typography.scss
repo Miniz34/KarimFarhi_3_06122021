@@ -1,8 +1,20 @@
 body {
     box-sizing: border-box;
     font-family: 'roboto', 'sans-serif';
-
+    
 }
+
+#main_wrapper {
+  max-width: 1400px;
+  margin: auto;
+}
+
+#menu-wrapper {
+  max-width: 1400px;
+  margin: auto;
+}
+
+
 
 section img {
     object-fit: cover;
