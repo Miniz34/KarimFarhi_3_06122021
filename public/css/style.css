@@ -327,6 +327,14 @@ header .restaurant__img--new p {
   color: rgba(87, 87, 87, 0.479);
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 @media screen and (min-width: 700px) {
   .restaurant__cards-wrapper {
     display: flex;
@@ -736,7 +744,6 @@ footer {
   margin-bottom: 25px;
   list-style-type: none;
   justify-content: space-around;
-  width: 100%;
   color: white;
 }
 @media screen and (min-width: 700px) {
